@@ -1,5 +1,5 @@
 Hello Ayesha Tahir here
-I made a Fitness Tracker Web on frontend with my team
+I made a Fitness Tracker Web with my team
 Fitness Tracker Web :-
 It is a responsive and interactive fitness tracking website designed to help users achieve their health and fitness goals. This project includes features like  workout suggestions, calorie tracking, and progress visualization using HTML, CSS, and JavaScript.
 Goals of the Project :-
