@@ -16,25 +16,40 @@ body {
 
 /* Header */
 
-header {
-    background: linear-gradient(135deg, #8ef691, #2e7d32);
+header { /* Background for Fitness Tracker */ 
+    /*
+    background: linear-gradient(135deg, #27862a, #2e7d32);
     color: #fff;
     padding: 20px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;*/
+
+    background-color: #48964c;
+    /*background: linear-gradient(135deg, #66bb6a, #4bb450, #81c784, #388e3c); /* Light Green, Dark Green, Lighter Green, Darker Green */
+    padding: 10px 0; /*widens up down */ 
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;/* round corners */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1700px;
     transition: all 0.3s ease-in-out;
 }
 
 header:hover {
-    background: linear-gradient(135deg, #66bb6a, #43a047);
+    background: linear-gradient(135deg, #66bb6a, #7cf782);
 }
 
-header h1 { /* Fitness Tracker */ 
+header h1 { /* Text "Fitness Tracker" */ 
     font-size: 2.5rem;
-    color: #113908; /* Green color */
+    color: #ffffff; /* color */
 }
 
 
@@ -65,21 +80,33 @@ nav ul li a:hover {
 /* Home Section */
 
 #home { /* Background for Welcome... */
+    /*
     text-align: center;
-    padding: 50px 20px; /* Apply a gradient that combines the top, bottom, left, and right */
-    background: linear-gradient(135deg, #66bb6a, #4bb450, #81c784, #388e3c); /* Light Green, Dark Green, Lighter Green, Darker Green */
+    padding: 50px 20px; /* Apply a gradient that combines the top, bottom, left, and right 
+    background: linear-gradient(135deg, #66bb6a, #4bb450, #81c784, #388e3c); /* Light Green, Dark Green, Lighter Green, Darker Green 
     border-radius: 10px;
     margin: 20px auto;
     width: 90%;
     max-width: 1200px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);  */
+
+    text-align: center;
+    padding: 70px 0;
+    background: linear-gradient(135deg, #6fec73, #bfed74);
+    color: #ffff;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    transition: all 0.3s ease-in-out;
+    margin: 20px auto; /* gap btw gitnees tracker and itself*/
+    /*width: 90%; /* widen by sides */ 
+    max-width: 1500px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 
 }
 
 #home h2 { /* Text "Welcome to Your Fitness Companion" */
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ffffffff
+    color: rgb(9, 63, 15)
 } 
 
 
