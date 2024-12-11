@@ -1,231 +1,27 @@
-
-/* General Reset */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: linear-gradient(135deg, #a2f3a4, #b7e85b); /* Green gradient from top-left to bottom-right */
-    color: #333;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
 }
 
-/* Header */
-
-header { /* Background for Fitness Tracker */ 
-    /*
-    background: linear-gradient(135deg, #27862a, #2e7d32);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;*/
-
-    background-color: #48964c;
-    /*background: linear-gradient(135deg, #66bb6a, #4bb450, #81c784, #388e3c); /* Light Green, Dark Green, Lighter Green, Darker Green */
-    padding: 10px 0; /*widens up down */ 
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px;/* round corners */
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1700px;
-    transition: all 0.3s ease-in-out;
+video {
+    object-fit: cover;
+    max-height: 300px;
 }
 
-header:hover {
-    background: linear-gradient(135deg, #66bb6a, #7cf782);
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-
-header h1 { /* Text "Fitness Tracker" */ 
-    font-size: 2.5rem;
-    color: #ffffff; /* color */
-}
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-} 
-
-nav ul li a:hover {
-    
-    color: #180f7e; /* blue color on hover */
-    transform: scale(1.1); /* Slightly enlarge the text */
-}
-
-/* Home Section */
-
-#home { /* Background for Welcome... */
-    /*
-    text-align: center;
-    padding: 50px 20px; /* Apply a gradient that combines the top, bottom, left, and right 
-    background: linear-gradient(135deg, #66bb6a, #4bb450, #81c784, #388e3c); /* Light Green, Dark Green, Lighter Green, Darker Green 
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);  */
-
-    text-align: center;
-    padding: 70px 0;
-    background: linear-gradient(135deg, #6fec73, #bfed74);
-    color: #ffff;
-    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-    transition: all 0.3s ease-in-out;
-    margin: 20px auto; /* gap btw gitnees tracker and itself*/
-    /*width: 90%; /* widen by sides */ 
-    max-width: 1500px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-
-}
-
-#home h2 { /* Text "Welcome to Your Fitness Companion" */
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: rgb(9, 63, 15)
-} 
-
-
-#home p { /* Text "Track your workouts, diet, and progress in one place." */
-    font-size: 1.2rem;
-    color: #333030; /* Ensures the paragraph text is white */
-}
-
-/* Features Section */
-
-#features {
-    padding: 50px 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-#features h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #2e7d32;
-}
-
-#features ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-}
-
-#features li {
-    list-style: none;
-    background: #e0f2f1;
-    padding: 20px 15px;
-    width: 30%;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background 0.3s ease;
-    cursor: pointer;
-}
-
-#features li:hover {
-    background: #4caf50;
-    color: #fff;
-    transform: translateY(-15px);
-}
-
-#features li:hover::after {
-    content: '💪';
-    font-size: 1.5rem;
-    display: block;
-    margin-top: 10px;
-}
-
-/* Footer */
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333333;
-    color: #fff;
-    margin-top: 20px;
-}
-
-
-/* Buttons */
 
 button {
-    display: inline-block;
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #388e3c;
-    transform: translateY(-3px);
-} 
-
-/* Media Queries for Responsiveness */
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    #features ul {
-        flex-direction: column;
-    }
-
-    #features li {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+    transform: translateY(-2px);
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    #home h2, #features h2 {
-        font-size: 1.5rem;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
+footer p {
+    font-size: 0.9rem;
 }
