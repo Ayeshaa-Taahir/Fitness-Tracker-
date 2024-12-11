@@ -62,26 +62,45 @@ nav ul li a:hover { /* when clicked text of "home/features/contact" */
     transform: scale(1.2); /* Slightly enlarge the text */
 }
 
+/* Add dots before the navigation links */
+nav ul li::before {
+    content: '•'; /* Dot character */
+    color: #fff; /* Dot color */
+    font-size: 1.5rem; /* Size of the dot */
+    margin-right: 5px; /* Space between the dot and text */
+    position: absolute; /* Position the dot before the text */
+    left: -20px; /* Position the dot to the left of the text */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the dot */
+}
+
+/* Adjustments for the list item to avoid overlap */
+nav ul li {
+    position: relative; /* Make sure the list items are positioned relatively for the dot */
+    margin: 0 20px;
+}
+
+
+
 /* Home Section */
 
 #home { /* Background for Welcome... */
 
     text-align: center;
     padding: 70px 0;
-    background: linear-gradient(135deg, #b8f8ad, #a1f182, #e9f1dc, #a8f475fd);
-    color: #ffff;
-    /box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/
+    background-color: #90f899;
     transition: all 0.3s ease-in-out;
-    margin: 20px auto; /* gap btw gitnees tracker and itself*/
-    /width: 90%; / widen by sides */ 
+    margin: 20px auto; /* gap btw fitnees tracker and itself*/
+    /*width: 90%; /* widen by sides */ 
     max-width: 1500px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-
 }
 
-#home:hover {
+/*#home:hover {
     background: linear-gradient(135deg, #a1f182, #b8f8ad, #a8f475fd, #e9f1dc); 
-}
+}*/
+
+
 
 #home h2 { /* Text "Welcome to Your Fitness Companion" */
     font-size: 2rem;
