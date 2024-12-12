@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
+                <li><a href="#" id="features-btn">Features</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -23,7 +23,8 @@
         <p>Track your workouts, diet, and progress in one place.</p>
     </section>
 
-    <section id="features">
+    <!-- Initially Hidden Features Section -->
+    <section id="features" style="display: none;">
         <h2>Features</h2>
         <ul>
             <li>Workout tracking</li>
@@ -36,7 +37,22 @@
         <p>&copy; 2024 Fitness Tracker App. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Get the 'Features' button and the 'Features' section
+        const featuresBtn = document.getElementById('features-btn');
+        const featuresSection = document.getElementById('features');
+
+        // Add event listener for the 'Features' button
+        featuresBtn.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default behavior of anchor tag (scrolling)
+            
+            // Toggle the visibility of the Features section
+            if (featuresSection.style.display === "none" || featuresSection.style.display === "") {
+                featuresSection.style.display = "block"; // Show the section
+            } else {
+                featuresSection.style.display = "none"; // Hide the section
+            }
+        });
+    </script>
 </body>
 </html>
-

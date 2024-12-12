@@ -1,230 +1,142 @@
-/* General Reset for all HTML elements */
+/* General Reset for all elements */
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body { /*for the entire page.*/
-    font-family: 'Arial', sans-serif;
-    background-color: linear-gradient(135deg, #e7390d, #b7e85b); /* Green gradient from top-left to bottom-right */
-    color: #333;
-    line-height: 1.6;
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif; /* Set default font */
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Default text color */
+    line-height: 1.6; /* Line height for readability */
 }
 
-/* Header */
-
-header { /* Background for Fitness Tracker */ 
-
-    background: linear-gradient(135deg, #6abd6f, #1b571e, #8fde93, #0a470d); 
-    padding: 1px 0; /*widens up down */ 
-    text-align: center;
-    position: sticky;
-    top: 0;
-    /z-index: 100;/
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px;/* round corners */
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1700px;
-    transition: all 0.3s ease-in-out;
-}
-   
-
-header h1 { /* Text "Fitness Tracker" */ 
-    font-size: 2.5rem;
-    color: #ffffff; /* color */
-    margin: 10px 0;
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #6abd6f, #1b571e); /* Gradient background for header */
+    padding: 20px 0; /* Space around header content */
+    text-align: center; /* Center-align content */
 }
 
+header h1 {
+    font-size: 2.5rem; /* Font size of main title */
+    color: #fff; /* White text color */
+}
 
-nav ul {  /*contains links (Home, Features, Contact)*/
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center the items */
+    margin-top: 10px; /* Space between title and nav */
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px; /* Space between nav links */
 }
 
-nav ul li a { /* initial text of "home/features/contact" */
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-} 
-
-nav ul li a:hover { /* when clicked text of "home/features/contact" */
-    
-    color: #000000; /* color on hover */
-    transform: scale(1.2); /* Slightly enlarge the text */
+nav ul li a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.1rem; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth transition effect */
 }
 
-/* Add dots before the navigation links */
-nav ul li::before {
-    content: '•'; /* Dot character */
-    color: #fff; /* Dot color */
-    font-size: 1.5rem; /* Size of the dot */
-    margin-right: 5px; /* Space between the dot and text */
-    position: absolute; /* Position the dot before the text */
-    left: -20px; /* Position the dot to the left of the text */
-    top: 50%;
-    transform: translateY(-50%); /* Vertically center the dot */
+nav ul li a:hover {
+    color: #000; /* Change color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
 }
 
-/* Adjustments for the list item to avoid overlap */
-nav ul li {
-    position: relative; /* Make sure the list items are positioned relatively for the dot */
-    margin: 0 20px;
+/* Home Section styles */
+#home {
+    text-align: center; /* Center-align content */
+    padding: 100px 0; /* Vertical padding */
+    background-color: #90f899; /* Light green background */
 }
 
-
-
-/* Home Section */
-
-#home { /* Background for Welcome... */
-
-    text-align: center;
-    padding: 70px 0;
-    background-color: #90f899;
-    transition: all 0.3s ease-in-out;
-    margin: 20px auto; /* gap btw fitnees tracker and itself*/
-    /*width: 90%; /* widen by sides */ 
-    max-width: 1500px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+#home h2 {
+    font-size: 2rem; /* Font size for subtitle */
+    margin-bottom: 20px; /* Space below title */
 }
 
-/*#home:hover {
-    background: linear-gradient(135deg, #a1f182, #b8f8ad, #a8f475fd, #e9f1dc); 
-}*/
-
-
-
-#home h2 { /* Text "Welcome to Your Fitness Companion" */
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: rgb(0, 0, 0)
-} 
-
-
-#home p { /* Text "Track your workouts, diet, and progress in one place." */
-    font-size: 1.2rem;
-    color: #000000; /* Ensures the paragraph text is white */
+.option {
+    display: flex; /* Display options side-by-side */
+    justify-content: center; /* Center-align options */
+    gap: 20px; /* Space between options */
 }
 
-/* Features Section */
-
-#features {
-    padding: 50px 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+.option div {
+    background-color: #e0f2f1; /* Light background for options */
+    padding: 20px; /* Space inside each option */
+    width: 150px; /* Width of each option */
+    text-align: center; /* Center text in each option */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
-#features h2 { /*introduces the "Features" section */
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #2e7d32;
+.option div:hover {
+    background-color: #4caf50; /* Change background on hover */
+    color: #fff; /* White text color on hover */
+    transform: translateY(-10px); /* Move up slightly on hover */
 }
 
-#features ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
+/* Contact Section styles */
+#contact {
+    text-align: center; /* Center-align content */
+    padding: 50px 20px; /* Padding around the section */
+    background-color: #fff; /* White background for contrast */
 }
 
-#features li {
-    list-style: none;
-    background: #e0f2f1;
-    padding: 20px 15px;
-    width: 30%;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, background 0.3s ease;
-    cursor: pointer;
+#contact h2 {
+    font-size: 2rem; /* Font size for title */
+    margin-bottom: 20px; /* Space below title */
 }
 
-#features li:hover {
-    background: #4caf50;
-    color: #fff;
-    transform: translateY(-15px);
+form {
+    display: flex; /* Arrange inputs vertically */
+    flex-direction: column; /* Stack inputs on top of each other */
+    align-items: center; /* Center-align the form */
+    gap: 10px; /* Space between form elements */
 }
 
-#features li:hover::after {
-    content: '💪';
-    font-size: 1.5rem;
-    display: block;
-    margin-top: 10px;
+input, textarea {
+    width: 80%; /* Width of input fields */
+    padding: 10px; /* Space inside input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Round corners */
+    font-size: 1rem; /* Font size for inputs */
 }
-
-/* Footer */
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333333;
-    color: #fff;
-    margin-top: 20px;
-}
-
-
-/* Buttons */
 
 button {
-    display: inline-block;
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    background-color: #4caf50; /* Green background for button */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Space inside button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Round corners */
+    font-size: 1rem; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
-    background-color: #388e3c;
-    transform: translateY(-3px);
-} 
-
-/* Media Queries for Responsiveness */
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    #features ul {
-        flex-direction: column;
-    }
-
-    #features li {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+    background-color: #388e3c; /* Darker green on hover */
+    transform: translateY(-3px); /* Lift button slightly on hover */
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
-    }
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Vertical padding for space */
+    position: relative; /* Ensures footer remains at the bottom of the page */
+    bottom: 0;
+    width: 100%; /* Full-width footer */
+}
 
-    #home h2, #features h2 {
-        font-size: 1.5rem;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
+footer p {
+    font-size: 1rem; /* Font size for footer text */
+    margin: 0; /* Remove default margin */
 }
