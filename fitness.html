@@ -3,56 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fitness Tracker</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Fitness Tracker</h1>
+        <h1>Fitness Tracker</h1> <!-- Main title of the website -->
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#" id="features-btn">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li> <!-- Link to Home Section -->
+                <li><a href="#contact">Contact</a></li> <!-- Link to Contact Section -->
             </ul>
         </nav>
     </header>
 
+    <!-- Home Section -->
     <section id="home">
-        <h2>Welcome to Your Fitness Companion</h2>
-        <p>Track your workouts, diet, and progress in one place.</p>
+        <h2>Welcome to Your Fitness Companion</h2> <!-- Subtitle for Home Section -->
+        <div class="option">
+            <div>Workout Tracking</div> <!-- Feature Option 1 -->
+            <div>Diet Planning</div> <!-- Feature Option 2 -->
+            <div>Progress Monitoring</div> <!-- Feature Option 3 -->
+        </div>
     </section>
 
-    <!-- Initially Hidden Features Section -->
-    <section id="features" style="display: none;">
-        <h2>Features</h2>
-        <ul>
-            <li>Workout tracking</li>
-            <li>Diet planning</li>
-            <li>Progress monitoring</li>
-        </ul>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2> <!-- Title for Contact Section -->
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required> <!-- Input for Name -->
+            <input type="email" placeholder="Your Email" required> <!-- Input for Email -->
+            <textarea placeholder="Your Message" required></textarea> <!-- Textarea for User Message -->
+            <button type="submit">Send Message</button> <!-- Submit Button -->
+        </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Fitness Tracker App. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Get the 'Features' button and the 'Features' section
-        const featuresBtn = document.getElementById('features-btn');
-        const featuresSection = document.getElementById('features');
-
-        // Add event listener for the 'Features' button
-        featuresBtn.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default behavior of anchor tag (scrolling)
-            
-            // Toggle the visibility of the Features section
-            if (featuresSection.style.display === "none" || featuresSection.style.display === "") {
-                featuresSection.style.display = "block"; // Show the section
-            } else {
-                featuresSection.style.display = "none"; // Hide the section
-            }
-        });
-    </script>
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
 </body>
 </html>
