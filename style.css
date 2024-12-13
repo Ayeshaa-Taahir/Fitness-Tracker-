@@ -109,6 +109,11 @@ input, textarea {
     font-size: 1rem; /* Font size for inputs */
 }
 
+textarea {
+    height: 40px; /* Match input height */
+    resize: none; /* Prevent resizing */
+}
+
 button {
     background-color: #4caf50; /* Green background for button */
     color: #fff; /* White text color */
