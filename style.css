@@ -124,19 +124,3 @@ button:hover {
     background-color: #388e3c; /* Darker green on hover */
     transform: translateY(-3px); /* Lift button slightly on hover */
 }
-
-/* Footer styles */
-footer {
-    background-color: #333; /* Dark background color for the footer */
-    color: #fff; /* White text color */
-    text-align: center; /* Center-align text */
-    padding: 20px 0; /* Vertical padding for space */
-    position: relative; /* Ensures footer remains at the bottom of the page */
-    bottom: 0;
-    width: 100%; /* Full-width footer */
-}
-
-footer p {
-    font-size: 1rem; /* Font size for footer text */
-    margin: 0; /* Remove default margin */
-}
