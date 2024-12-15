@@ -1,142 +1,429 @@
-/* General Reset for all elements */
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
+/* General body styles */
 body {
-    font-family: 'Arial', sans-serif; /* Set default font */
-    background-color: #f4f4f9; /* Light background color */
-    color: #333; /* Default text color */
-    line-height: 1.6; /* Line height for readability */
+    font-family: Arial, sans-serif; /* Sets the font for the entire page */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers content horizontally */
 }
 
-/* Header styles */
-header {
-    background: linear-gradient(135deg, #6abd6f, #1b571e); /* Gradient background for header */
-    padding: 20px 0; /* Space around header content */
-    text-align: center; /* Center-align content */
+/* Header Section */
+.header-section {
+    text-align: center; /* Centers the text */
+    padding: 50px 20px; /* Adds padding to top/bottom and left/right */
+    background-color: black; /* Sets the background color to black */
+    width: 100%; /* Makes the section take the full width */
 }
 
-header h1 {
-    font-size: 2.5rem; /* Font size of main title */
-    color: #fff; /* White text color */
+.container {
+    max-width: 1200px; /* Restricts the width to 1200px */
+    margin: 0 auto; /* Centers the container horizontally */
 }
 
-nav ul {
-    list-style: none; /* Remove bullet points from list */
-    display: flex; /* Arrange items horizontally */
-    justify-content: center; /* Center the items */
-    margin-top: 10px; /* Space between title and nav */
+.logo {
+    font-size: 3rem; /* Sets the font size for the logo */
+    font-weight: bold; /* Makes the font bold */
+    color: #990000; /* Sets the color to dark maroon */
 }
 
-nav ul li {
-    margin: 0 15px; /* Space between nav links */
+.subheading {
+    font-size: 1.5rem; /* Sets the font size for subheading */
+    font-weight: bold; /* Makes the subheading bold */
+    color: white; /* Sets the text color to white */
+    margin-top: 10px; /* Adds space above the subheading */
 }
 
-nav ul li a {
-    color: #fff; /* White text color for links */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 1.1rem; /* Font size for links */
-    transition: color 0.3s ease; /* Smooth transition effect */
+.intro-text {
+    font-size: 1rem; /* Sets the font size for the introductory text */
+    color: #f5f5f5; /* Sets the text color to light grey */
+    margin-top: 10px; /* Adds space above the intro text */
 }
 
-nav ul li a:hover {
-    color: #000; /* Change color on hover */
-    transform: scale(1.1); /* Slightly increase size on hover */
+/* Email input and Join button */
+.join-section {
+    margin-top: 30px; /* Adds space above the section */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns children vertically */
+    align-items: center; /* Centers children horizontally */
 }
 
-/* Home Section styles */
-#home {
-    text-align: center; /* Center-align content */
-    padding: 100px 0; /* Vertical padding */
-    background-color: #90f899; /* Light green background */
+.email-input {
+    padding: 12px; /* Adds padding inside the input box */
+    width: 100%; /* Makes the input take full width of its container */
+    max-width: 400px; /* Limits the width to 400px */
+    margin: 10px 0; /* Adds space above and below the input */
+    border-radius: 5px; /* Rounds the corners of the input */
+    border: 1px solid #444; /* Sets a dark border */
+    background-color: #333; /* Sets the background color to dark grey */
+    color: white; /* Sets the text color to white */
 }
 
-#home h2 {
-    font-size: 2rem; /* Font size for subtitle */
-    margin-bottom: 20px; /* Space below title */
+.join-button {
+    display: inline-flex; /* Uses flexbox for inline layout */
+    align-items: center; /* Centers the text vertically */
+    justify-content: center; /* Centers the text horizontally */
+    padding: 5px 10px; /* Adds padding to the button */
+    background-color: #cc3333; /* Sets a light maroon background color */
+    color: white; /* Sets the button text color to white */
+    border: none; /* Removes the button border */
+    border-radius: 5px; /* Rounds the button corners */
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+    font-size: 0.8rem; /* Sets a slightly smaller font size */
+    font-weight: bold; /* Makes the button text bold */
+    width: 100px; /* Sets a fixed width for the button */
+    height: 35px; /* Sets a fixed height for the button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-top: 10px; /* Adds space above the button */
+    text-align: center; /* Centers text within the button */
 }
 
-.option {
-    display: flex; /* Display options side-by-side */
-    justify-content: center; /* Center-align options */
-    gap: 20px; /* Space between options */
+.join-button:hover {
+    background-color: #ff6666; /* Changes the background color on hover */
 }
 
-.option div {
-    background-color: #e0f2f1; /* Light background for options */
-    padding: 20px; /* Space inside each option */
-    width: 150px; /* Width of each option */
-    text-align: center; /* Center text in each option */
-    border-radius: 8px; /* Round the corners */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
-    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+/* Testimonials Section */
+.testimonials {
+    background-color: #f5f5f5; /* Sets a light grey background */
+    padding: 40px 20px; /* Adds padding to the section */
+    width: 100%; /* Makes the section full width */
 }
 
-.option div:hover {
-    background-color: #4caf50; /* Change background on hover */
-    color: #fff; /* White text color on hover */
-    transform: translateY(-10px); /* Move up slightly on hover */
+.testimonial {
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Centers content vertically */
+    margin-bottom: 20px; /* Adds space below each testimonial */
 }
 
-/* Contact Section styles */
-#contact {
-    text-align: center; /* Center-align content */
-    padding: 50px 20px; /* Padding around the section */
-    background-color: #fff; /* White background for contrast */
+.testimonial-img img {
+    border-radius: 50%; /* Makes the image circular */
+    width: 50px; /* Sets the width of the image */
+    height: 50px; /* Sets the height of the image */
+    margin-right: 15px; /* Adds space to the right of the image */
 }
 
-#contact h2 {
-    font-size: 2rem; /* Font size for title */
-    margin-bottom: 20px; /* Space below title */
+.testimonial-text {
+    flex: 1; /* Makes the text section take the remaining space */
 }
 
-form {
-    display: flex; /* Arrange inputs vertically */
-    flex-direction: column; /* Stack inputs on top of each other */
-    align-items: center; /* Center-align the form */
-    gap: 10px; /* Space between form elements */
+.rating {
+    color: #ffcc00; /* Sets gold color for the rating stars */
+    font-size: 1.2rem; /* Sets font size for the rating */
 }
 
-input, textarea {
-    width: 80%; /* Width of input fields */
-    padding: 10px; /* Space inside input fields */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 5px; /* Round corners */
-    font-size: 1rem; /* Font size for inputs */
+.testimonial-text p {
+    font-size: 1rem; /* Sets font size for the testimonial text */
+    color: #333; /* Sets the text color to dark grey */
 }
 
-button {
-    background-color: #4caf50; /* Green background for button */
-    color: #fff; /* White text color */
-    padding: 10px 20px; /* Space inside button */
-    border: none; /* Remove default border */
-    border-radius: 8px; /* Round corners */
-    font-size: 1rem; /* Font size for button text */
+/* Image with Call to Action Section */
+.fitness-image-section {
+    text-align: center; /* Centers the text */
+    padding: 40px 20px; /* Adds padding to the section */
+    background-color: black; /* Sets the background color to black */
+    color: white; /* Sets text color to white */
+    width: 100%; /* Makes the section full width */
+}
+
+.fitness-image {
+    max-width: 100%; /* Ensures the image does not exceed its container width */
+    height: auto; /* Maintains the image aspect ratio */
+    margin-top: 20px; /* Adds space above the image */
+}
+
+.call-to-action h3 {
+    font-size: 2rem; /* Sets the font size for the heading */
+    color: #990000; /* Sets the color to dark maroon */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.call-to-action p {
+    font-size: 0.9rem; /* Sets smaller font size for the paragraph */
+    color: #f5f5f5; /* Sets light grey text color */
+    line-height: 1.5; /* Adjusts the line height for readability */
+    max-width: 800px; /* Limits the width of the paragraph */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .call-to-action h3 {
+        font-size: 1.8rem; /* Adjusts the font size for smaller screens */
+    }
+    
+    .call-to-action p {
+        font-size: 0.85rem; /* Reduces the font size for mobile */
+    }
+}
+
+/* Fitness Goals Section */
+.fitness-goals-section {
+    text-align: center; /* Centers the content */
+    padding: 40px 20px; /* Adds padding around the section */
+    background-color: white; /* Sets background color to white */
+    color: black; /* Sets text color to black */
+    width: 100%; /* Ensures the section takes full width */
+}
+
+.fitness-goals-section h3 {
+    font-size: 2rem; /* Sets font size for the heading */
+    color: #990000; /* Dark maroon color for heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.fitness-goals-section p {
+    font-size: 1rem; /* Sets the font size for the paragraph */
+    color: #333; /* Sets dark grey text color */
+    line-height: 1.5; /* Adjusts line spacing for readability */
+    max-width: 800px; /* Limits the paragraph width */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+.fitness-image {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    margin-top: 20px; /* Adds space above the image */
+}
+
+/* Stay Motivated and Accountable Section */
+.motivated-accountable-section {
+    text-align: center; /* Centers the content */
+    padding: 40px 20px; /* Adds padding */
+    background-color: black; /* Sets the background color to black */
+    color: white; /* Sets text color to white */
+    width: 100%; /* Ensures full width */
+}
+
+.motivated-accountable-section h3 {
+    font-size: 2rem; /* Sets font size for the heading */
+    color: #990000; /* Sets dark maroon color for the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.motivated-accountable-section p {
+    font-size: 1rem; /* Sets font size for the paragraph */
+    color: #f5f5f5; /* Sets light grey color */
+    line-height: 1.5; /* Adjusts line height */
+    max-width: 800px; /* Restricts the width */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+/* Personalized Tracking Section */
+.personalized-tracking-section {
+    text-align: center; /* Centers the content */
+    padding: 40px 20px; /* Adds padding */
+    background-color: white; /* White background */
+    color: black; /* Black text color */
+    width: 100%; /* Full width */
+}
+
+.personalized-tracking-section h3 {
+    font-size: 2rem; /* Sets the heading font size */
+    color: #990000; /* Dark maroon color for the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.personalized-tracking-section p {
+    font-size: 1rem; /* Sets paragraph font size */
+    color: #333; /* Dark grey text color */
+    line-height: 1.5; /* Adjusts line height */
+    max-width: 800px; /* Restricts the width */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+/* Feedback Section */
+.feedback-section {
+    padding: 40px 20px; /* Adds padding */
+    background-color: #f5f5f5; /* Light grey background */
+    text-align: center; /* Centers the text */
+    width: 100%; /* Full width */
+}
+
+.feedback-section h3 {
+    font-size: 2rem; /* Sets heading font size */
+    color: #990000; /* Sets dark maroon color for the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.feedback-box {
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers the items vertically */
+    justify-content: center; /* Centers horizontally */
+    margin-top: 20px; /* Adds space above the feedback box */
+    text-align: left; /* Aligns the text to the left */
+}
+
+.profile-pic {
+    width: 60px; /* Sets profile picture size */
+    height: 60px; /* Sets height for the profile picture */
+    border-radius: 50%; /* Makes the picture circular */
+    margin-right: 20px; /* Adds space to the right of the image */
+}
+
+.feedback-text {
+    max-width: 600px; /* Restricts width for readability */
+}
+
+.feedback-text p {
+    font-size: 1rem; /* Sets font size for the feedback text */
+    color: #333; /* Dark grey color */
+    line-height: 1.5; /* Adjusts line height for readability */
+}
+
+.feedback-text strong {
+    font-size: 1.2rem; /* Makes the name of the person bold */
+    color: #990000; /* Dark maroon color for emphasis */
+}
+
+/* Join Now Box */
+.final-join-box {
+    padding: 40px 20px; /* Adds padding */
+    background-color: #990000; /* Dark maroon background */
+    color: white; /* White text color */
+    text-align: center; /* Centers the text */
+    width: 100%; /* Full width */
+}
+
+.final-join-box h3 {
+    font-size: 2rem; /* Sets font size for the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.final-join-box p {
+    font-size: 1rem; /* Sets font size for the paragraph */
+    margin-bottom: 20px; /* Adds space below the paragraph */
+}
+
+.join-form input {
+    padding: 12px; /* Adds padding inside input */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limits the width to 400px */
+    margin: 10px 0; /* Adds space around the input */
+    border-radius: 5px; /* Rounds the corners of the input */
+    border: 1px solid #444; /* Adds a border */
+}
+
+.join-now-button {
+    padding: 12px 20px; /* Adds padding */
+    background-color: #cc3333; /* Lighter maroon color */
+    color: white; /* Sets text color to white */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Rounds the button corners */
     cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1rem; /* Sets font size */
+    font-weight: bold; /* Bold text */
+    width: 25%; /* Limits the width to 25% of the parent container */
+    max-width: 150px; /* Maximum width */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
-button:hover {
-    background-color: #388e3c; /* Darker green on hover */
-    transform: translateY(-3px); /* Lift button slightly on hover */
+.join-now-button:hover {
+    background-color: #ff6666; /* Changes color on hover */
 }
 
-/* Footer styles */
-footer {
-    background-color: #333; /* Dark background color for the footer */
-    color: #fff; /* White text color */
-    text-align: center; /* Center-align text */
-    padding: 20px 0; /* Vertical padding for space */
-    position: relative; /* Ensures footer remains at the bottom of the page */
-    bottom: 0;
-    width: 100%; /* Full-width footer */
+/* Footer Section */
+.footer {
+    padding: 20px; /* Adds padding */
+    background-color: #333333; /* Dark grey background */
+    color: white; /* White text color */
+    text-align: center; /* Centers the text */
+    width: 100%; /* Full width */
+    position: relative; /* Ensures proper positioning */
 }
 
-footer p {
-    font-size: 1rem; /* Font size for footer text */
-    margin: 0; /* Remove default margin */
+.footer h2 {
+    font-size: 2.2rem; /* Sets heading font size */
+    color: #ffcc00; /* Gold color for the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.footer-links {
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers the items */
+    justify-content: center; /* Centers items vertically */
+    margin-bottom: 0; /* Removes bottom margin */
+    padding: 0; /* Removes padding */
+    height: 150px; /* Ensures there’s enough height for centering */
+}
+
+.footer-links ul {
+    list-style: none; /* Removes list style */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+.footer-links ul li {
+    font-size: 1rem; /* Sets font size */
+    margin: 10px 0; /* Adds space between items */
+}
+
+.footer-links ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White color for links */
+    font-size: 1.1rem; /* Slightly larger font size for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-links ul li a:hover {
+    color: #ffcc00; /* Changes color on hover */
+}
+
+.footer .social-links {
+    display: flex; /* Uses flexbox */
+    justify-content: space-evenly; /* Evenly spaces out social links */
+    width: 100%; /* Full width */
+    margin-top: 0px; /* Removes margin */
+}
+
+.footer .social-links a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* White text color */
+    font-size: 1.5rem; /* Larger size for social icons */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer .social-links a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+.footer p {
+    font-size: 1rem; /* Sets font size for the footer text */
+    margin-top: 3px; /* Adds margin on top */
+    color: #bbb; /* Light grey color */
+}
+
+.footer p span {
+    font-weight: bold; /* Makes the span text bold */
+    color: #ffcc00; /* Gold color for the span */
+}
+
+.footer .footer-bottom {
+    margin-top: 3px; /* Adds a small margin */
+    padding: 10px; /* Adds padding */
+    background-color: #222222; /* Dark background for the footer bottom */
+    text-align: center; /* Centers the text */
+    font-size: 0.9rem; /* Smaller font size */
+    color: #bbb; /* Light grey color */
+}
+
+.footer .footer-bottom span {
+    color: #ffcc00; /* Gold color for the span in footer bottom */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column; /* Stacks footer links vertically on small screens */
+        align-items: center; /* Centers links */
+    }
+
+    .footer .social-links {
+        flex-direction: column; /* Stacks social icons vertically */
+    }
+
+    .footer .footer-bottom {
+        padding: 15px; /* Increases padding */
+        font-size: 1rem; /* Increases font size */
+    }
 }
