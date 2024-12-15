@@ -1,23 +1,9 @@
-// Select the contact form
-const contactForm = document.getElementById('contactForm');
-
-// Add event listener to handle form submission
-contactForm.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  // Get form input values
-  const name = contactForm.elements['name'].value;
-  const email = contactForm.elements['email'].value;
-  const message = contactForm.elements['message'].value;
-
-  // Check if all fields are filled
-  if (name === '' || email === '' || message === '') {
-    alert('Please fill in all fields.');
+// JavaScript for Join Now button functionality
+document.getElementById('joinButton').addEventListener('click',function() {
+  const email = document.getElementById('email').value.trim();
+  if (email) {
+    alert(`Thank you for joining` +email+"!");
   } else {
-    // Simulate form submission (in a real app, you'd send it to a server)
-    alert(`Thank you, ${name}! Your message has been sent.`);
-
-    // Clear the form after submission
-    contactForm.reset();
+    alert("Please enter a valid email.");
   }
 });
