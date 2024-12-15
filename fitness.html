@@ -1,46 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Tracker</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit Track</title>
+  <link rel="stylesheet" href="style.css">
+>>>>>>> c2ab081821031e8c26964babd9b9ab58146dba99
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>Fitness Tracker</h1> <!-- Main title of the website -->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li> <!-- Link to Home Section -->
-                <li><a href="#contact">Contact</a></li> <!-- Link to Contact Section -->
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Welcome to Your Fitness Companion</h2> <!-- Subtitle for Home Section -->
-        <div class="option">
-            <div>Workout Tracking</div> <!-- Feature Option 1 -->
-            <div>Diet Planning</div> <!-- Feature Option 2 -->
-            <div>Progress Monitoring</div> <!-- Feature Option 3 -->
+<body class="bg-black text-white">
+
+  <!-- Header Section -->
+  <header class="header-section">
+    <div class="container">
+      <!-- Logo and Heading -->
+      <h1 class="logo">Fit Track</h1>
+      <p class="subheading">Achieve your personal fitness goals today!</p>
+      <p class="intro-text">Join our personal fitness tracker to stay on top of your fitness journey and reach your goals faster.</p>
+
+      <!-- Email Box and Join Button -->
+      <div class="join-section">
+        <input type="email" id="email" placeholder="Enter your email" class="email-input">
+        <button id="joinButton" class="join-button">Join Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>User Feedback</h2>
+      
+      <!-- Rating and Comment Section -->
+      <div class="testimonial">
+        <div class="testimonial-img">
+          <img src="https://images.pexels.com/photos/936090/pexels-photo-936090.jpeg?auto=compress&cs=tinysrgb&w=300" alt="User 1">
         </div>
-    </section>
+        <div class="testimonial-text">
+          <div class="rating">
+            ★★★★☆
+          </div>
+          <p>"Fit Track has changed my fitness routine! I love how easy it is to track my progress."</p>
+          <p><strong>- John Doe</strong></p>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="testimonial-img">
+          <img src="https://images.pexels.com/photos/25232982/pexels-photo-25232982/free-photo-of-portrait-of-woman-with-brown-hair.jpeg?auto=compress&cs=tinysrgb&w=300" alt="User 2">
+        </div>
+        <div class="testimonial-text">
+          <div class="rating">
+            ★★★★★
+          </div>
+          <p>"This app helped me set realistic fitness goals and stay motivated. Highly recommend!"</p>
+          <p><strong>- Jane Smith</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2> <!-- Title for Contact Section -->
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required> <!-- Input for Name -->
-            <input type="email" placeholder="Your Email" required> <!-- Input for Email -->
-            <textarea placeholder="Your Message" required></textarea> <!-- Textarea for User Message -->
-            <button type="submit">Send Message</button> <!-- Submit Button -->
-        </form>
-    </section>
+  <!-- Image with Call to Action Section -->
+  <section class="fitness-image-section">
+    <div class="container">
+      <div class="call-to-action">
+        <h3>Personal Fitness Tracker</h3>
+        <p>Join now to start tracking your fitness goals with ease and stay motivated!</p>
+      </div>
+      <img src="https://images.pexels.com/photos/28765156/pexels-photo-28765156/free-photo-of-young-man-reflecting-in-gym-mirror.png?auto=compress&cs=tinysrgb&w=300" alt="Fitness Tracker" class="fitness-image">
+    </div>
+  </section>
 
-    <!-- Link to external JavaScript file -->
-    <script src="scripts.js"></script>
+  <!-- Track Fitness Goals Easily Section -->
+  <section class="fitness-goals-section">
+    <div class="container">
+      <h3>Track Fitness Goals Easily</h3>
+      <p>Fit Track helps you set realistic fitness goals and track your progress effortlessly.</p>
+      <img src="https://images.pexels.com/photos/5588327/pexels-photo-5588327.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Track Fitness Goals" class="fitness-image">
+    </div>
+  </section>
+
+  <!-- Stay Motivated and Accountable Section -->
+  <section class="motivated-accountable-section">
+    <div class="container">
+      <h3>Stay Motivated and Accountable</h3>
+      <p>Get reminders, track your consistency, and stay motivated with daily challenges and rewards.</p>
+      <img src="https://images.pexels.com/photos/3076509/pexels-photo-3076509.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Motivated and Accountable" class="fitness-image">
+    </div>
+  </section>
+
+  <!-- Personalized Fitness Tracking Section -->
+  <section class="personalized-tracking-section">
+    <div class="container">
+      <h3>Personalized Fitness Tracking</h3>
+      <p>Fit Track offers personalized fitness plans based on your unique goals and progress.</p>
+      <img src="https://images.pexels.com/photos/674546/pexels-photo-674546.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Personalized Tracking" class="fitness-image">
+    </div>
+  </section>
+
+ <!-- Feedback Section -->
+ <section class="feedback-section">
+    <div class="container">
+      <h3>User Feedback</h3>
+      <div class="feedback-box">
+        <img src="https://images.pexels.com/photos/936090/pexels-photo-936090.jpeg?auto=compress&cs=tinysrgb&w=300" alt="User Profile" class="profile-pic">
+        <div class="feedback-text">
+          <p>"Fit Track has truly helped me stay motivated and accountable. The personalized tracking features are amazing!"</p>
+          <strong>- John Doe</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Join Box -->
+  <section class="final-join-box">
+    <div class="container">
+      <h3>Join Now to Start Tracking</h3>
+      <p>Fill in your details and get started on your fitness journey with Fit Track!</p>
+      <form action="#" method="POST" class="join-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit" class="join-now-button">Join Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<div class="footer">
+    <h2>Stay Connected</h2>
+    
+    <!-- Links Section -->
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    
+    <!-- Social Media Section -->
+    <div class="social-links">
+      <a href="https://facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+      <a href="https://linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    
+    <!-- Footer Text -->
+    <p>© <span>Fit Track</span> All Rights Reserved</p>
+   
+  </div>
+
+  <script src="introduction.js"></script>
 </body>
 </html>

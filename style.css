@@ -116,6 +116,7 @@ body {
     color: #333; /* Sets the text color to dark grey */
 }
 
+<<<<<<< HEAD
 /* Image with Call to Action Section */
 .fitness-image-section {
     text-align: center; /* Centers the text */
@@ -309,6 +310,20 @@ body {
     color: white; /* Sets text color to white */
     border: none; /* Removes the border */
     border-radius: 5px; /* Rounds the button corners */
+=======
+textarea {
+    height: 40px; /* Match input height */
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    background-color: #4caf50; /* Green background for button */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Space inside button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Round corners */
+    font-size: 1rem; /* Font size for button text */
+>>>>>>> c2ab081821031e8c26964babd9b9ab58146dba99
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 1rem; /* Sets font size */
     font-weight: bold; /* Bold text */
@@ -317,6 +332,7 @@ body {
     transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
+<<<<<<< HEAD
 .join-now-button:hover {
     background-color: #ff6666; /* Changes color on hover */
 }
@@ -427,3 +443,9 @@ body {
         font-size: 1rem; /* Increases font size */
     }
 }
+=======
+button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: translateY(-3px); /* Lift button slightly on hover */
+}
+>>>>>>> c2ab081821031e8c26964babd9b9ab58146dba99
