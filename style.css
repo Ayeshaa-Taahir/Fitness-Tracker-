@@ -1,451 +1,498 @@
 /* General body styles */
 body {
-    font-family: Arial, sans-serif; /* Sets the font for the entire page */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    display: flex; /* Uses flexbox layout */
-    flex-direction: column; /* Aligns items vertically */
-    align-items: center; /* Centers content horizontally */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Section */
+  .header-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #990000; /* Dark Maroon */
+  }
+  
+  .subheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    color: #f5f5f5;
+    margin-top: 10px;
+  }
+  
+  /* Email input and Join button */
+  .join-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+  }
+  
+  .email-input {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+  }
+  
+  .join-button {
+    display: inline-flex; /* Enables horizontal flexbox layout */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    padding: 5px 10px; /* Smaller padding for a smaller button */
+    background-color: #cc3333; /* Lighter Maroon */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem; /* Slightly smaller font size */
+    font-weight: bold;
+    width: 100px; /* Reduced width */
+    height: 35px; /* Reduced height */
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    text-align: center;
 }
 
-/* Header Section */
-.header-section {
-    text-align: center; /* Centers the text */
-    padding: 50px 20px; /* Adds padding to top/bottom and left/right */
-    background-color: black; /* Sets the background color to black */
-    width: 100%; /* Makes the section take the full width */
-}
-
-.container {
-    max-width: 1200px; /* Restricts the width to 1200px */
-    margin: 0 auto; /* Centers the container horizontally */
-}
-
-.logo {
-    font-size: 3rem; /* Sets the font size for the logo */
-    font-weight: bold; /* Makes the font bold */
-    color: #990000; /* Sets the color to dark maroon */
-}
-
-.subheading {
-    font-size: 1.5rem; /* Sets the font size for subheading */
-    font-weight: bold; /* Makes the subheading bold */
-    color: white; /* Sets the text color to white */
-    margin-top: 10px; /* Adds space above the subheading */
-}
-
-.intro-text {
-    font-size: 1rem; /* Sets the font size for the introductory text */
-    color: #f5f5f5; /* Sets the text color to light grey */
-    margin-top: 10px; /* Adds space above the intro text */
-}
-
-/* Email input and Join button */
-.join-section {
-    margin-top: 30px; /* Adds space above the section */
-    display: flex; /* Uses flexbox layout */
-    flex-direction: column; /* Aligns children vertically */
-    align-items: center; /* Centers children horizontally */
-}
-
-.email-input {
-    padding: 12px; /* Adds padding inside the input box */
-    width: 100%; /* Makes the input take full width of its container */
-    max-width: 400px; /* Limits the width to 400px */
-    margin: 10px 0; /* Adds space above and below the input */
-    border-radius: 5px; /* Rounds the corners of the input */
-    border: 1px solid #444; /* Sets a dark border */
-    background-color: #333; /* Sets the background color to dark grey */
-    color: white; /* Sets the text color to white */
-}
-
-.join-button {
-    display: inline-flex; /* Uses flexbox for inline layout */
-    align-items: center; /* Centers the text vertically */
-    justify-content: center; /* Centers the text horizontally */
-    padding: 5px 10px; /* Adds padding to the button */
-    background-color: #cc3333; /* Sets a light maroon background color */
-    color: white; /* Sets the button text color to white */
-    border: none; /* Removes the button border */
-    border-radius: 5px; /* Rounds the button corners */
-    cursor: pointer; /* Changes cursor to a pointer on hover */
-    font-size: 0.8rem; /* Sets a slightly smaller font size */
-    font-weight: bold; /* Makes the button text bold */
-    width: 100px; /* Sets a fixed width for the button */
-    height: 35px; /* Sets a fixed height for the button */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-    margin-top: 10px; /* Adds space above the button */
-    text-align: center; /* Centers text within the button */
-}
-
-.join-button:hover {
-    background-color: #ff6666; /* Changes the background color on hover */
-}
-
-/* Testimonials Section */
-.testimonials {
-    background-color: #f5f5f5; /* Sets a light grey background */
-    padding: 40px 20px; /* Adds padding to the section */
-    width: 100%; /* Makes the section full width */
-}
-
-.testimonial {
-    display: flex; /* Uses flexbox for layout */
-    align-items: center; /* Centers content vertically */
-    margin-bottom: 20px; /* Adds space below each testimonial */
-}
-
-.testimonial-img img {
-    border-radius: 50%; /* Makes the image circular */
-    width: 50px; /* Sets the width of the image */
-    height: 50px; /* Sets the height of the image */
-    margin-right: 15px; /* Adds space to the right of the image */
-}
-
-.testimonial-text {
-    flex: 1; /* Makes the text section take the remaining space */
-}
-
-.rating {
-    color: #ffcc00; /* Sets gold color for the rating stars */
-    font-size: 1.2rem; /* Sets font size for the rating */
-}
-
-.testimonial-text p {
-    font-size: 1rem; /* Sets font size for the testimonial text */
-    color: #333; /* Sets the text color to dark grey */
-}
-
-<<<<<<< HEAD
-/* Image with Call to Action Section */
-.fitness-image-section {
-    text-align: center; /* Centers the text */
-    padding: 40px 20px; /* Adds padding to the section */
-    background-color: black; /* Sets the background color to black */
-    color: white; /* Sets text color to white */
-    width: 100%; /* Makes the section full width */
-}
-
-.fitness-image {
-    max-width: 100%; /* Ensures the image does not exceed its container width */
-    height: auto; /* Maintains the image aspect ratio */
-    margin-top: 20px; /* Adds space above the image */
-}
-
-.call-to-action h3 {
-    font-size: 2rem; /* Sets the font size for the heading */
-    color: #990000; /* Sets the color to dark maroon */
-    margin-bottom: 10px; /* Adds space below the heading */
-}
-
-.call-to-action p {
-    font-size: 0.9rem; /* Sets smaller font size for the paragraph */
-    color: #f5f5f5; /* Sets light grey text color */
-    line-height: 1.5; /* Adjusts the line height for readability */
-    max-width: 800px; /* Limits the width of the paragraph */
-    margin: 0 auto; /* Centers the paragraph */
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
+  
+  .join-button:hover {
+    background-color: #ff6666; /* Lighter red for hover */
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    width: 100%;
+  }
+  
+  .testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .testimonial-text {
+    flex: 1;
+  }
+  
+  .rating {
+    color: #ffcc00; /* Gold for stars */
+    font-size: 1.2rem;
+  }
+  
+  .testimonial-text p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Image with Call to Action Section */
+  .fitness-image-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+  
+  .fitness-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Added margin to push the image down */
+  }
+  
+  .call-to-action h3 {
+    font-size: 2rem;
+    color: #990000; /* Dark Maroon */
+    margin-bottom: 10px;
+  }
+  
+  .call-to-action p {
+    font-size: 0.9rem; /* Smaller font size for detailed text */
+    color: #f5f5f5;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
     .call-to-action h3 {
-        font-size: 1.8rem; /* Adjusts the font size for smaller screens */
+      font-size: 1.8rem;
     }
     
     .call-to-action p {
-        font-size: 0.85rem; /* Reduces the font size for mobile */
+      font-size: 0.85rem; /* Smaller font for mobile */
     }
-}
+  }
 
-/* Fitness Goals Section */
+  /* Fitness Goals Section */
 .fitness-goals-section {
-    text-align: center; /* Centers the content */
-    padding: 40px 20px; /* Adds padding around the section */
-    background-color: white; /* Sets background color to white */
-    color: black; /* Sets text color to black */
-    width: 100%; /* Ensures the section takes full width */
+    text-align: center;
+    padding: 40px 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+  
+  .fitness-goals-section h3 {
+    font-size: 2rem;
+    color: #990000; /* Dark Maroon */
+    margin-bottom: 10px;
+  }
+  
+  .fitness-goals-section p {
+    font-size: 1rem;
+    color: #f5f5f5;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .fitness-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .fitness-goals-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;  /* White background */
+  color: black;
+  width: 100%;
 }
 
 .fitness-goals-section h3 {
-    font-size: 2rem; /* Sets font size for the heading */
-    color: #990000; /* Dark maroon color for heading */
-    margin-bottom: 10px; /* Adds space below the heading */
+  font-size: 2rem;
+  color: #990000; /* Dark Maroon */
+  margin-bottom: 10px;
 }
 
 .fitness-goals-section p {
-    font-size: 1rem; /* Sets the font size for the paragraph */
-    color: #333; /* Sets dark grey text color */
-    line-height: 1.5; /* Adjusts line spacing for readability */
-    max-width: 800px; /* Limits the paragraph width */
-    margin: 0 auto; /* Centers the paragraph */
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .fitness-image {
-    max-width: 100%; /* Makes the image responsive */
-    height: auto; /* Maintains the aspect ratio */
-    margin-top: 20px; /* Adds space above the image */
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
-/* Stay Motivated and Accountable Section */
-.motivated-accountable-section {
-    text-align: center; /* Centers the content */
-    padding: 40px 20px; /* Adds padding */
-    background-color: black; /* Sets the background color to black */
-    color: white; /* Sets text color to white */
-    width: 100%; /* Ensures full width */
-}
+.fitness-goals-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;  /* White background */
+    color: black;
+    width: 100%;
+  }
+  
+  .fitness-goals-section h3 {
+    font-size: 2rem;
+    color: #990000; /* Dark Maroon */
+    margin-bottom: 10px;
+  }
+  
+  .fitness-goals-section p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .fitness-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Stay Motivated and Accountable Section (Black Background) */
+  .motivated-accountable-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: black;  /* Black background */
+    color: white;
+    width: 100%;
+  }
+  
+  .motivated-accountable-section h3 {
+    font-size: 2rem;
+    color: #990000; /* Dark Maroon */
+    margin-bottom: 10px;
+  }
+  
+  .motivated-accountable-section p {
+    font-size: 1rem;
+    color: #f5f5f5;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Personalized Tracking Section (White Background) */
+  .personalized-tracking-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;  /* White background */
+    color: black;
+    width: 100%;
+  }
+  
+  .personalized-tracking-section h3 {
+    font-size: 2rem;
+    color: #990000; /* Dark Maroon */
+    margin-bottom: 10px;
+  }
+  
+  .personalized-tracking-section p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .fitness-goals-section h3, .motivated-accountable-section h3, .personalized-tracking-section h3 {
+      font-size: 1.8rem;
+    }
+    
+    .fitness-goals-section p, .motivated-accountable-section p, .personalized-tracking-section p {
+      font-size: 0.9rem; /* Smaller font for mobile */
+    }
+  }
 
-.motivated-accountable-section h3 {
-    font-size: 2rem; /* Sets font size for the heading */
-    color: #990000; /* Sets dark maroon color for the heading */
-    margin-bottom: 10px; /* Adds space below the heading */
-}
-
-.motivated-accountable-section p {
-    font-size: 1rem; /* Sets font size for the paragraph */
-    color: #f5f5f5; /* Sets light grey color */
-    line-height: 1.5; /* Adjusts line height */
-    max-width: 800px; /* Restricts the width */
-    margin: 0 auto; /* Centers the paragraph */
-}
-
-/* Personalized Tracking Section */
-.personalized-tracking-section {
-    text-align: center; /* Centers the content */
-    padding: 40px 20px; /* Adds padding */
-    background-color: white; /* White background */
-    color: black; /* Black text color */
-    width: 100%; /* Full width */
-}
-
-.personalized-tracking-section h3 {
-    font-size: 2rem; /* Sets the heading font size */
-    color: #990000; /* Dark maroon color for the heading */
-    margin-bottom: 10px; /* Adds space below the heading */
-}
-
-.personalized-tracking-section p {
-    font-size: 1rem; /* Sets paragraph font size */
-    color: #333; /* Dark grey text color */
-    line-height: 1.5; /* Adjusts line height */
-    max-width: 800px; /* Restricts the width */
-    margin: 0 auto; /* Centers the paragraph */
-}
-
-/* Feedback Section */
+  /* Feedback Section */
 .feedback-section {
-    padding: 40px 20px; /* Adds padding */
-    background-color: #f5f5f5; /* Light grey background */
-    text-align: center; /* Centers the text */
-    width: 100%; /* Full width */
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .feedback-section h3 {
+    font-size: 2rem;
+    color: #990000;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .feedback-text {
+    max-width: 600px;
+  }
+  
+  .feedback-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .feedback-text strong {
+    font-size: 1.2rem;
+    color: #990000;
+  }
+  
+  /* Join Now Box */
+  .final-join-box {
+    padding: 40px 20px;
+    background-color: #990000;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .final-join-box h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .final-join-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .join-form input {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+  }
+  
+  .join-now-button {
+    padding: 12px 20px;
+    background-color: #cc3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 25%;
+    max-width: 150px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-now-button:hover {
+    background-color: #ff6666;
+  }
+  
+ 
+ /* Footer Section */
+ .footer {
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: relative;
 }
-
-.feedback-section h3 {
-    font-size: 2rem; /* Sets heading font size */
-    color: #990000; /* Sets dark maroon color for the heading */
-    margin-bottom: 20px; /* Adds space below the heading */
-}
-
-.feedback-box {
-    display: flex; /* Uses flexbox layout */
-    align-items: center; /* Centers the items vertically */
-    justify-content: center; /* Centers horizontally */
-    margin-top: 20px; /* Adds space above the feedback box */
-    text-align: left; /* Aligns the text to the left */
-}
-
-.profile-pic {
-    width: 60px; /* Sets profile picture size */
-    height: 60px; /* Sets height for the profile picture */
-    border-radius: 50%; /* Makes the picture circular */
-    margin-right: 20px; /* Adds space to the right of the image */
-}
-
-.feedback-text {
-    max-width: 600px; /* Restricts width for readability */
-}
-
-.feedback-text p {
-    font-size: 1rem; /* Sets font size for the feedback text */
-    color: #333; /* Dark grey color */
-    line-height: 1.5; /* Adjusts line height for readability */
-}
-
-.feedback-text strong {
-    font-size: 1.2rem; /* Makes the name of the person bold */
-    color: #990000; /* Dark maroon color for emphasis */
-}
-
-/* Join Now Box */
-.final-join-box {
-    padding: 40px 20px; /* Adds padding */
-    background-color: #990000; /* Dark maroon background */
-    color: white; /* White text color */
-    text-align: center; /* Centers the text */
-    width: 100%; /* Full width */
-}
-
-.final-join-box h3 {
-    font-size: 2rem; /* Sets font size for the heading */
-    margin-bottom: 20px; /* Adds space below the heading */
-}
-
-.final-join-box p {
-    font-size: 1rem; /* Sets font size for the paragraph */
-    margin-bottom: 20px; /* Adds space below the paragraph */
-}
-
-.join-form input {
-    padding: 12px; /* Adds padding inside input */
-    width: 100%; /* Full width */
-    max-width: 400px; /* Limits the width to 400px */
-    margin: 10px 0; /* Adds space around the input */
-    border-radius: 5px; /* Rounds the corners of the input */
-    border: 1px solid #444; /* Adds a border */
-}
-
-.join-now-button {
-    padding: 12px 20px; /* Adds padding */
-    background-color: #cc3333; /* Lighter maroon color */
-    color: white; /* Sets text color to white */
-    border: none; /* Removes the border */
-    border-radius: 5px; /* Rounds the button corners */
-=======
-textarea {
-    height: 40px; /* Match input height */
-    resize: none; /* Prevent resizing */
-}
-
-button {
-    background-color: #4caf50; /* Green background for button */
-    color: #fff; /* White text color */
-    padding: 10px 20px; /* Space inside button */
-    border: none; /* Remove default border */
-    border-radius: 8px; /* Round corners */
-    font-size: 1rem; /* Font size for button text */
->>>>>>> c2ab081821031e8c26964babd9b9ab58146dba99
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 1rem; /* Sets font size */
-    font-weight: bold; /* Bold text */
-    width: 25%; /* Limits the width to 25% of the parent container */
-    max-width: 150px; /* Maximum width */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-}
-
-<<<<<<< HEAD
-.join-now-button:hover {
-    background-color: #ff6666; /* Changes color on hover */
-}
-
-/* Footer Section */
-.footer {
-    padding: 20px; /* Adds padding */
-    background-color: #333333; /* Dark grey background */
-    color: white; /* White text color */
-    text-align: center; /* Centers the text */
-    width: 100%; /* Full width */
-    position: relative; /* Ensures proper positioning */
-}
-
-.footer h2 {
-    font-size: 2.2rem; /* Sets heading font size */
-    color: #ffcc00; /* Gold color for the heading */
-    margin-bottom: 10px; /* Adds space below the heading */
-}
-
-.footer-links {
-    display: flex; /* Uses flexbox layout */
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center; /* Centers the items */
-    justify-content: center; /* Centers items vertically */
-    margin-bottom: 0; /* Removes bottom margin */
-    padding: 0; /* Removes padding */
-    height: 150px; /* Ensures there’s enough height for centering */
-}
-
-.footer-links ul {
-    list-style: none; /* Removes list style */
-    padding: 0; /* Removes padding */
-    margin: 0; /* Removes margin */
-}
-
-.footer-links ul li {
-    font-size: 1rem; /* Sets font size */
-    margin: 10px 0; /* Adds space between items */
-}
-
-.footer-links ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: white; /* White color for links */
-    font-size: 1.1rem; /* Slightly larger font size for links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.footer-links ul li a:hover {
-    color: #ffcc00; /* Changes color on hover */
-}
-
-.footer .social-links {
-    display: flex; /* Uses flexbox */
-    justify-content: space-evenly; /* Evenly spaces out social links */
-    width: 100%; /* Full width */
-    margin-top: 0px; /* Removes margin */
-}
-
-.footer .social-links a {
-    text-decoration: none; /* Removes underline */
-    color: white; /* White text color */
-    font-size: 1.5rem; /* Larger size for social icons */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.footer .social-links a:hover {
-    color: #ffcc00; /* Gold color on hover */
-}
-
-.footer p {
-    font-size: 1rem; /* Sets font size for the footer text */
-    margin-top: 3px; /* Adds margin on top */
-    color: #bbb; /* Light grey color */
-}
-
-.footer p span {
-    font-weight: bold; /* Makes the span text bold */
-    color: #ffcc00; /* Gold color for the span */
-}
-
-.footer .footer-bottom {
-    margin-top: 3px; /* Adds a small margin */
-    padding: 10px; /* Adds padding */
-    background-color: #222222; /* Dark background for the footer bottom */
-    text-align: center; /* Centers the text */
-    font-size: 0.9rem; /* Smaller font size */
-    color: #bbb; /* Light grey color */
-}
-
-.footer .footer-bottom span {
-    color: #ffcc00; /* Gold color for the span in footer bottom */
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
+  
+  .footer h2 {
+    font-size: 2.2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center items vertically in available space */
+    margin-bottom: 0;
+    padding: 0;
+    height: 150px; /* Ensure there's enough height for centering */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li {
+    font-size: 1rem;
+    margin: 10px 0; /* Add spacing between links */
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  .footer .social-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 0px; /* Adjusted small gap after Pricing */
+  }
+  
+  .footer .social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-links a:hover {
+    color: #ffcc00;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin-top: 3px;
+    color: #bbb;
+  }
+  
+  .footer p span {
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
+  .footer .footer-bottom {
+    margin-top: 3px; /* Adjusted margin to have minimal space */
+    padding: 10px;
+    background-color: #222222;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  .footer .footer-bottom span {
+    color: #ffcc00;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
     .footer-links {
-        flex-direction: column; /* Stacks footer links vertically on small screens */
-        align-items: center; /* Centers links */
+      flex-direction: column;
+      align-items: center;
     }
-
+  
     .footer .social-links {
-        flex-direction: column; /* Stacks social icons vertically */
+      flex-direction: column;
     }
-
+  
     .footer .footer-bottom {
-        padding: 15px; /* Increases padding */
-        font-size: 1rem; /* Increases font size */
+      padding: 15px;
+      font-size: 1rem;
     }
-}
-=======
-button:hover {
-    background-color: #388e3c; /* Darker green on hover */
-    transform: translateY(-3px); /* Lift button slightly on hover */
-}
->>>>>>> c2ab081821031e8c26964babd9b9ab58146dba99
+  }
