@@ -21,10 +21,10 @@ body {
     margin: 0 auto;
   }
   
-  .logo {
+  .logo { /*fitnesss traker text*/
     font-size: 3rem;
     font-weight: bold;
-    color: #f52121; /* Dark Maroon */
+    color: #000000; /* Dark Maroon */
   }
   
   .subheading {
@@ -33,18 +33,12 @@ body {
     color: white;
     margin-top: 10px;
   }
-  
-  .intro-text {
-    font-size: 1rem;
-    color: #f5f5f5;
-    margin-top: 10px;
-  }
 
   /* Add these styles to your existing CSS */
 
 /* Header styles for the navigation bar */
 header {
-  background: linear-gradient(135deg, #e4290c, #ea988a); /* Gradient background for header */
+  background: linear-gradient(135deg, #e4290c, #edb2a7); /* Gradient background for header */
   padding: 20px 0; /* Space around header content */
   text-align: center; /* Center-align content */
 }
@@ -79,13 +73,13 @@ nav ul li a:hover {
 
 /* Add hover effects for the buttons */
 .option div:hover {
-  background-color: #c1351f; /* Change background on hover */
+  background-color: #d96f5e; /* Change background on hover */
   color: #fff; /* White text color on hover */
   transform: translateY(-10px); /* Move up slightly on hover */
 }
 
   
-  /* Email input and Join button */
+  /* Email input and Join button 
   .join-section {
     margin-top: 30px;
     display: flex;
@@ -105,19 +99,19 @@ nav ul li a:hover {
   }
   
   .join-button {
-    display: inline-flex; /* Enables horizontal flexbox layout */
-    align-items: center; /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
-    padding: 5px 10px; /* Smaller padding for a smaller button */
-    background-color: #cc3333; /* Lighter Maroon */
+    display: inline-flex; /* Enables horizontal flexbox layout 
+    align-items: center; /* Centers text vertically
+    justify-content: center; /* Centers text horizontally 
+    padding: 5px 10px; /* Smaller padding for a smaller button 
+    background-color: #cc3333; /* Lighter Maroon 
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.8rem; /* Slightly smaller font size */
+    font-size: 0.8rem; /* Slightly smaller font size 
     font-weight: bold;
-    width: 100px; /* Reduced width */
-    height: 35px; /* Reduced height */
+    width: 100px; /* Reduced width 
+    height: 35px; /* Reduced height 
     transition: background-color 0.3s ease;
     margin-top: 10px;
     text-align: center;
@@ -126,7 +120,7 @@ nav ul li a:hover {
   
   .join-button:hover {
     background-color: #ff6666; /* Lighter red for hover */
-  }
+  } */
   
   /* Testimonials Section */
   .testimonials {
