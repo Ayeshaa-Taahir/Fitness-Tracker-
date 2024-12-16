@@ -6,6 +6,16 @@ document.getElementById('joinButton').addEventListener('click',function() {
   } else {
     alert("Please enter a valid email.");
   }
+}); 
+// JavaScript for smooth scrolling when the navigation links are clicked
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
 });
 // JavaScript to manage calorie tracking
 
