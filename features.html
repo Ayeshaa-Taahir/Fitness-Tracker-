@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Features</h1>
+  </header>
+
+  <main class="feature-buttons">
+    <button id="dashboard-btn" onclick="navigateTo('dashboard.html')">Dashboard</button>
+    <button id="diet-plan-btn" onclick="navigateTo('diet-plan.html')">Diet Plan</button>
+    <button id="exercises-btn" onclick="navigateTo('exercises.html')">Exercises</button>
+  </main>
+
+  <script>
+    // Navigation function
+    function navigateTo(page) {
+      window.location.href = page; // Redirects to the respective page
+    }
+  </script>
+</body>
+</html>
