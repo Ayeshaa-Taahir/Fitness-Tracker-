@@ -1,6 +1,6 @@
 /* General body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family:  'poppins', sans-serif ;
     margin: 0;
     padding: 0;
     display: flex;
@@ -22,13 +22,18 @@ body {
   }
   
   .logo { /*fitnesss traker text*/
+    font-family:  Oswald ;
+    font-size: 5rem; /* Increase the font size */
+    font-weight: 600; /* Make the text bold */
+    letter-spacing: 5px; /* Add spacing between letters */
+    text-transform: uppercase; /* Make the text uppercase */
     font-size: 3rem;
     font-weight: bold;
-    color: #000000; /* Dark Maroon */
+    color: #f81111; /* Dark Maroon */
   }
   
   .subheading {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     font-weight: bold;
     color: white;
     margin-top: 10px;
@@ -77,50 +82,71 @@ nav ul li a:hover {
   color: #fff; /* White text color on hover */
   transform: translateY(-10px); /* Move up slightly on hover */
 }
-
-  
-  /* Email input and Join button 
-  .join-section {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;  
-    align-items: center;     
-  }
-  
-  .email-input {
-    padding: 12px;
-    width: 100%;
-    max-width: 400px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #333;
-    color: white;
-  }
-  
-  .join-button {
-    display: inline-flex; /* Enables horizontal flexbox layout 
-    align-items: center; /* Centers text vertically
-    justify-content: center; /* Centers text horizontally 
-    padding: 5px 10px; /* Smaller padding for a smaller button 
-    background-color: #cc3333; /* Lighter Maroon 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.8rem; /* Slightly smaller font size 
-    font-weight: bold;
-    width: 100px; /* Reduced width 
-    height: 35px; /* Reduced height 
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    text-align: center;
+/* Apply background image to header with overlay */
+.header-section {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover; /* Makes sure the image covers the entire header */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Takes full height of the viewport */
+  color: white; /* Ensure text stands out on background */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center;
 }
 
-  
-  .join-button:hover {
-    background-color: #ff6666; /* Lighter red for hover */
-  } */
+/* Add a dark vignette effect and lighten the background image */
+.header-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Lightens the image with a semi-transparent dark overlay */
+  z-index: 1;
+  background: radial-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 100%); /* Vignette effect across the entire image */
+}
+
+/* Ensure the content is above the overlay */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+}
+
+h1.logo {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
   
   /* Testimonials Section */
   .testimonials {
