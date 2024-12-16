@@ -17,54 +17,51 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
       });
   });
 });
-// JavaScript to manage calorie tracking
+// Feature button toggles calorie counter visibility
+const featureBtn = document.getElementById("feature-btn");
+const calorieCounter = document.getElementById("calorie-counter");
 
-// Select form elements
-const calorieForm = document.getElementById('calorie-form');
-const foodInput = document.getElementById('food');
-const caloriesInput = document.getElementById('calories');
-const totalCaloriesDisplay = document.getElementById('total-calories');
-const foodList = document.getElementById('food-list');
+featureBtn.addEventListener("click", showCalorieCounter);
 
-// Initialize total calorie count
-let totalCalories = 0;
+// Add button functionality
+const addBtn = document.getElementById("add-btn");
+addBtn.addEventListener("click", addFoodItem);
 
-// Function to handle form submission
-calorieForm.addEventListener('submit', handleSubmit);
+function showCalorieCounter() {
+  // Toggle visibility of calorie counter section
+  calorieCounter.classList.toggle("hidden");
+}
 
-// Handle form submission
-function handleSubmit(event) {
-  event.preventDefault();
+function addFoodItem() {
+  const foodInput = document.getElementById("food");
+  const caloriesInput = document.getElementById("calories");
+  const calorieList = document.getElementById("calorie-list");
+  const totalCaloriesElement = document.getElementById("total-calories");
 
-  // Get input values
+  // Trim input values
   const food = foodInput.value.trim();
-  const calories = parseInt(caloriesInput.value);
+  const calories = caloriesInput.value.trim();
 
-  // Validate inputs
-  if (food && !isNaN(calories) && calories > 0) {
-    // Add calories to total count
-    updateTotalCalories(calories);
-
-    // Add food item to log
-    addFoodItem(food, calories);
-
-    // Clear form inputs
-    foodInput.value = '';
-    caloriesInput.value = '';
-  } else {
-    alert('Please enter a valid food item and calorie amount.');
+  // Input validation
+  if (!food) {
+    alert("Please enter a food name.");
+    return;
   }
-}
+  if (!calories || isNaN(calories) || Number(calories) <= 0) {
+    alert("Please enter a valid number for calories.");
+    return;
+  }
 
-// Update total calories display
-function updateTotalCalories(calories) {
-  totalCalories += calories;
-  totalCaloriesDisplay.textContent = `Total Calories: ${totalCalories}`;
-}
-
-// Add food item to log
-function addFoodItem(food, calories) {
-  const listItem = document.createElement('li');
+  // Add food item to the list
+  const listItem = document.createElement("div");
   listItem.textContent = `${food}: ${calories} calories`;
-  foodList.appendChild(listItem);
+  calorieList.appendChild(listItem);
+
+  // Update total calories
+  const totalCalories = Number(totalCaloriesElement.textContent) + Number(calories);
+  totalCaloriesElement.textContent = totalCalories;
+
+  // Clear input fields
+  foodInput.value = "";
+  caloriesInput.value = "";
 }

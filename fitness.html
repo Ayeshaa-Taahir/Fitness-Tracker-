@@ -175,41 +175,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Your Fitness Tracker</h1>
-    </header>
-
+   
     <!-- Main content section -->
-    <main>
-        <section id="calorie-tracker">
-            <h2>Calorie Tracker</h2>
-            <p>Track your daily calorie intake to stay on top of your fitness goals.</p>
-
-            <!-- Input form for logging food and calories -->
-            <form id="calorie-form">
-                <label for="food">Food Item:</label>
-                <input type="text" id="food" name="food" placeholder="Enter food item" required>
-
-                <label for="calories">Calories:</label>
-                <input type="number" id="calories" name="calories" placeholder="Enter calories" required>
-
-                <button type="submit" class="track-button">Add</button>
-            </form>
-
-            <!-- Display the total calories -->
-            <div id="calorie-display">
-                <h3>Total Calories: <span id="total-calories">0</span></h3>
-            </div>
-
-            <!-- List of logged food items -->
-            <div id="food-log">
-                <h3>Food Log:</h3>
-                <ul id="food-list"></ul>
-            </div>
-        </section>
-    </main>
-
-    <!-- Include external JavaScript file -->
-    <script src="introduction.js"></script>
-</body>
-</html>
+    <header>
+      <h1>Fitness Tracker</h1>
+      <button id="feature-btn">Feature</button>
+    </header>
+  
+    <!-- Calorie Counter Section (Initially Hidden) -->
+    <section id="calorie-counter" class="hidden">
+      <h2>Calorie Tracker</h2>
+      <div>
+        <label for="food">Food:</label>
+        <input type="text" id="food" placeholder="Enter food name">
+      </div>
+      <div>
+        <label for="calories">Calories:</label>
+        <input type="number" id="calories" placeholder="Enter calories">
+      </div>
+      <button id="add-btn">Add Food</button>
+      <div id="calorie-list"></div>
+      <p>Total Calories: <span id="total-calories">0</span></p>
+    </section>
+  
+    <script src="script.js"></script>
+  </body>
+  </html>
