@@ -310,6 +310,38 @@ nav ul li a:hover {
     margin: 0 auto;
   }
 
+/* Calorie Counter Section */
+#calorie-counter {
+  padding: 20px;
+  display: none; /* Initially hidden */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  margin: 5px 0;
+  padding: 8px;
+  width: calc(100% - 20px);
+}
+
+#calorie-list {
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
 /* Styling for the calorie tracker section */
 #calorie-tracker {
   background-color: white;
@@ -375,7 +407,7 @@ nav ul li a:hover {
   padding: 0.7rem;
   border-radius: 4px;
   border: 1px solid #ddd;
-}
+} */
 
   
   /* Personalized Tracking Section (White Background) */
