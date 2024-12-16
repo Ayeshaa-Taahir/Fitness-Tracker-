@@ -2,10 +2,18 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+=======
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fit Track</title>
   <link rel="stylesheet" href="style.css">
+>>>>>>> 39b57cd83683d8b1806412a87367eb67296733f2
 </head>
 
 <body class="bg-black text-white">
@@ -152,5 +160,53 @@
   </div>
 
   <script src="introduction.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fitness tracker homepage with calorie counting feature">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Fitness Tracker</h1>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <section id="calorie-tracker">
+            <h2>Calorie Tracker</h2>
+            <p>Track your daily calorie intake to stay on top of your fitness goals.</p>
+
+            <!-- Input form for logging food and calories -->
+            <form id="calorie-form">
+                <label for="food">Food Item:</label>
+                <input type="text" id="food" name="food" placeholder="Enter food item" required>
+
+                <label for="calories">Calories:</label>
+                <input type="number" id="calories" name="calories" placeholder="Enter calories" required>
+
+                <button type="submit" class="track-button">Add</button>
+            </form>
+
+            <!-- Display the total calories -->
+            <div id="calorie-display">
+                <h3>Total Calories: <span id="total-calories">0</span></h3>
+            </div>
+
+            <!-- List of logged food items -->
+            <div id="food-log">
+                <h3>Food Log:</h3>
+                <ul id="food-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include external JavaScript file -->
+    <script src="introduction.js"></script>
 </body>
 </html>
