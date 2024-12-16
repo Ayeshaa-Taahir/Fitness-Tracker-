@@ -17,12 +17,15 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
       });
   });
 });
+
 // Feature button toggles calorie counter visibility
-const featureBtn = document.getElementById("feature-btn");
+const featureBtn = document.getElementById("#features");
 const calorieCounter = document.getElementById("calorie-counter");
 
-featureBtn.addEventListener("click", showCalorieCounter);
-
+featureBtn.addEventListener("click", () =>
+{
+  window.location.href = "features.html";
+});
 // Add button functionality
 const addBtn = document.getElementById("add-btn");
 addBtn.addEventListener("click", addFoodItem);
@@ -31,6 +34,8 @@ function showCalorieCounter() {
   // Toggle visibility of calorie counter section
   calorieCounter.classList.toggle("hidden");
 }
+
+
 
 function addFoodItem() {
   const foodInput = document.getElementById("food");
