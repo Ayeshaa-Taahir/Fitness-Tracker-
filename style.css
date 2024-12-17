@@ -194,8 +194,7 @@ nav ul li a:hover {
   }
   
   
-
-  /* Fitness Goals Section */
+/* Fitness Goals Section */
 .fitness-goals-section { /*Track fitness goals... back */
     text-align: center;
     padding: 40px 20px;
@@ -441,4 +440,9 @@ nav ul li a:hover {
       font-size: 1rem;
     }
   }
+<<<<<<< HEAD
     }}
+=======
+}
+  }
+>>>>>>> 500e23879ff13e9b63f1e363630781ef7d9c1488
