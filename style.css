@@ -21,7 +21,6 @@ body {
     margin: 0 auto;
   }
   
-<<<<<<< HEAD
   .logo { /*fitnesss traker text*/
     font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-size: 5rem; /* Increase the font size */
@@ -31,12 +30,6 @@ body {
     font-size: 3rem;
     font-weight: bold;
     color: #3cec0b; /* Dark Maroon */
-=======
-  .logo {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #f52121; /* Dark Maroon */
->>>>>>> bce7081024b79fb30c2d02bf569e97206bb23c76
   }
   
   .subheading {
@@ -96,7 +89,6 @@ nav ul li a:hover {
   transform: translateY(-10px); /* Move up slightly on hover */
 }
 
-<<<<<<< HEAD
 /* Apply background image to header with overlay */
 .header-section {
   position: relative;
@@ -160,45 +152,6 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-=======
-  
-  /* Email input and Join button */
-  .join-section {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;  
-    align-items: center;     
-  }
-  
-  .email-input {
-    padding: 12px;
-    width: 100%;
-    max-width: 400px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #333;
-    color: white;
-  }
-  
-  .join-button {
-    display: inline-flex; /* Enables horizontal flexbox layout */
-    align-items: center; /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
-    padding: 5px 10px; /* Smaller padding for a smaller button */
-    background-color: #cc3333; /* Lighter Maroon */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.8rem; /* Slightly smaller font size */
-    font-weight: bold;
-    width: 100px; /* Reduced width */
-    height: 35px; /* Reduced height */
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    text-align: center;
->>>>>>> bce7081024b79fb30c2d02bf569e97206bb23c76
 }
 
   
@@ -354,221 +307,7 @@ nav ul li a:hover {
     .fitness-goals-section p, .motivated-accountable-section p, .personalized-tracking-section p, .call-to-action p {
       font-size: 0.9rem; /* Smaller font for mobile 
     }
-<<<<<<< HEAD
   } 
-=======
-  }
-
-  /* Fitness Goals Section */
-.fitness-goals-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: black;
-    color: white;
-    width: 100%;
-  }
-  
-  .fitness-goals-section h3 {
-    font-size: 2rem;
-    color: #990000; /* Dark Maroon */
-    margin-bottom: 10px;
-  }
-  
-  .fitness-goals-section p {
-    font-size: 1rem;
-    color: #f5f5f5;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .fitness-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-  
-  .fitness-goals-section {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: white;  /* White background */
-  color: black;
-  width: 100%;
-}
-
-.fitness-goals-section h3 {
-  font-size: 2rem;
-  color: #990000; /* Dark Maroon */
-  margin-bottom: 10px;
-}
-
-.fitness-goals-section p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.fitness-image {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
-.fitness-goals-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: white;  /* White background */
-    color: black;
-    width: 100%;
-  }
-  
-  .fitness-goals-section h3 {
-    font-size: 2rem;
-    color: #990000; /* Dark Maroon */
-    margin-bottom: 10px;
-  }
-  
-  .fitness-goals-section p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .fitness-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-  
-  /* Stay Motivated and Accountable Section (Black Background) */
-  .motivated-accountable-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: black;  /* Black background */
-    color: white;
-    width: 100%;
-  }
-  
-  .motivated-accountable-section h3 {
-    font-size: 2rem;
-    color: #990000; /* Dark Maroon */
-    margin-bottom: 10px;
-  }
-  
-  .motivated-accountable-section p {
-    font-size: 1rem;
-    color: #f5f5f5;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-/* Styling for the calorie tracker section */
-#calorie-tracker {
-  background-color: white;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  max-width: 600px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#calorie-tracker h2 {
-  color: #4CAF50;
-}
-
-/* Input form styling */
-#calorie-form {
-  display: grid;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-#calorie-form label {
-  font-weight: bold;
-}
-
-#calorie-form input {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.track-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 0.7rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.track-button:hover {
-  background-color: #45a049;
-}
-
-/* Display section for calories and food log */
-#calorie-display, #food-log {
-  margin-top: 1rem;
-}
-
-#calorie-display h3, #food-log h3 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-#food-list {
-  list-style: none;
-  padding: 0;
-}
-
-#food-list li {
-  background-color: #f9f9f9;
-  margin: 0.5rem 0;
-  padding: 0.7rem;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-}
-
-  
-  /* Personalized Tracking Section (White Background) */
-  .personalized-tracking-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: white;  /* White background */
-    color: black;
-    width: 100%;
-  }
-  
-  .personalized-tracking-section h3 {
-    font-size: 2rem;
-    color: #990000; /* Dark Maroon */
-    margin-bottom: 10px;
-  }
-  
-  .personalized-tracking-section p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .fitness-goals-section h3, .motivated-accountable-section h3, .personalized-tracking-section h3 {
-      font-size: 1.8rem;
-    }
-    
-    .fitness-goals-section p, .motivated-accountable-section p, .personalized-tracking-section p {
-      font-size: 0.9rem; /* Smaller font for mobile */
-    }
-  }
->>>>>>> bce7081024b79fb30c2d02bf569e97206bb23c76
 
   /* Feedback Section */
 .feedback-section {
@@ -662,7 +401,6 @@ nav ul li a:hover {
   
 /* Footer Section */
  .footer {
-<<<<<<< HEAD
   display: flex; /* Use Flexbox */
   align-items: center; /* Vertically center the content */
   justify-content: center; /* Horizontally center the content */
@@ -688,97 +426,6 @@ nav ul li a:hover {
 }
 
 /* Mobile responsiveness */
-=======
-  padding: 20px;
-  background-color: #333333;
-  color: white;
-  text-align: center;
-  width: 100%;
-  position: relative;
-}
-  
-  .footer h2 {
-    font-size: 2.2rem;
-    color: #ffcc00;
-    margin-bottom: 10px;
-  }
-  
-  .footer-links {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    justify-content: center; /* Center items vertically in available space */
-    margin-bottom: 0;
-    padding: 0;
-    height: 150px; /* Ensure there's enough height for centering */
-  }
-  
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-links ul li {
-    font-size: 1rem;
-    margin: 10px 0; /* Add spacing between links */
-  }
-  
-  .footer-links ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-links ul li a:hover {
-    color: #ffcc00;
-  }
-  
-  .footer .social-links {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 0px; /* Adjusted small gap after Pricing */
-  }
-  
-  .footer .social-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  .footer .social-links a:hover {
-    color: #ffcc00;
-  }
-  
-  .footer p {
-    font-size: 1rem;
-    margin-top: 3px;
-    color: #bbb;
-  }
-  
-  .footer p span {
-    font-weight: bold;
-    color: #ffcc00;
-  }
-  
-  .footer .footer-bottom {
-    margin-top: 3px; /* Adjusted margin to have minimal space */
-    padding: 10px;
-    background-color: #222222;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #bbb;
-  }
-  
-  .footer .footer-bottom span {
-    color: #ffcc00;
-  }
-  
-  /* Mobile responsiveness */
->>>>>>> bce7081024b79fb30c2d02bf569e97206bb23c76
   @media (max-width: 768px) {
     .footer-links {
       flex-direction: column;
@@ -794,3 +441,4 @@ nav ul li a:hover {
       font-size: 1rem;
     }
   }
+    }}

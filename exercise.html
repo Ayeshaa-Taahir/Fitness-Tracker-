@@ -1,52 +1,36 @@
-<!-- exercise.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise</title>
-  <!-- Link the renamed CSS file -->
+  <title>Exercise Plans</title>
   <link rel="stylesheet" href="styleexercise.css">
-  <!-- Link the renamed JavaScript file -->
-  <script src="exercise.js" defer></script>
 </head>
 <body>
-  <header class="exercise-header">
-    <h1>Exercise Tracker</h1>
+  <header>
+    <h1>Exercise Plans</h1>
   </header>
-  <main class="exercise-main">
-    <!-- Section for workout categories -->
-    <section class="workout-categories">
-      <h2>Choose Your Workout</h2>
-      <div class="categories">
-        <div class="category-card" data-category="cardio">
-          <h3>Cardio</h3>
-          <p>Burn calories with running, cycling, and more.</p>
-        </div>
-        <div class="category-card" data-category="strength">
-          <h3>Strength</h3>
-          <p>Build muscle with weight training.</p>
-        </div>
-        <div class="category-card" data-category="flexibility">
-          <h3>Flexibility</h3>
-          <p>Improve mobility with yoga and stretches.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Section for workout plans -->
-    <section class="workout-plans" id="workout-plans">
-      <h2>Workout Plans</h2>
-      <div id="plans-container">
-        <p>Select a category to view plans.</p>
+  <div class="container">
+    <!-- Exercise Category Buttons -->
+    <div class="category-buttons">
+      <div class="category-card cardio" data-category="cardio">
+        <h2>Cardio</h2>
       </div>
-    </section>
+      <div class="category-card strength" data-category="strength">
+        <h2>Strength</h2>
+      </div>
+      <div class="category-card flexibility" data-category="flexibility">
+        <h2>Flexibility</h2>
+      </div>
+    </div>
 
-    <!-- Section for tracking progress -->
-    <section class="progress-tracker">
-      <h2>Progress Tracker</h2>
-      <canvas id="progress-chart"></canvas>
-    </section>
-  </main>
+    <!-- Workout Plans Section -->
+    <div id="plans-container" class="plans-container">
+      <!-- Dynamic content will be injected here -->
+    </div>
+  </div>
+
+  <script src="exercise.js"></script>
 </body>
 </html>

@@ -37,13 +37,13 @@ const workoutPlans = {
         name: "Yoga", 
         duration: "60 min", 
         intensity: "Low", 
-        image: "https://images.pexels.com/photos/8436766/pexels-photo-8436766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+        image: "https://images.pexels.com/photos/4047042/pexels-photo-4047042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
       },
       { 
         name: "stretching", 
         duration: "30 min", 
         intensity: "Low", 
-        image: "https://images.pexels.com/photos/4534580/pexels-photo-4534580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+        image: "https://images.pexels.com/photos/5384538/pexels-photo-5384538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
       },
     ],
   };

@@ -1,92 +1,122 @@
-/* styleexercise.css */
+/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f0f0f0;
   }
   
-  header.exercise-header {
-    background-color: #4caf50;
+  header {
+    background-color: #2a9d8f;
     color: white;
+    padding: 1rem 0;
     text-align: center;
-    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  main.exercise-main {
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem;
   }
   
-  .workout-categories {
-    margin-bottom: 2rem;
-  }
-  
-  .categories {
+  /* Category Buttons Styling */
+  .category-buttons {
     display: flex;
-    gap: 1rem;
     justify-content: space-around;
+    margin-top: 2rem;
   }
   
   .category-card {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    text-align: center;
+    position: relative;
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .category-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   
-  .workout-plans {
-    margin-bottom: 2rem;
+  /* Background images for each button */
+  .category-card.cardio {
+    background: url('https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
   }
   
-  #plans-container {
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    min-height: 150px;
+  .category-card.strength {
+    background: url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
   }
   
-  .progress-tracker {
-    text-align: center;
+  .category-card.flexibility {
+    background: url('https://images.pexels.com/photos/868757/pexels-photo-868757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
   }
   
-  canvas {
-    max-width: 100%;
-    height: auto;
+  /* Overlay for button text */
+  .category-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
-  @media (max-width: 768px) {
-    .categories {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .category-card {
-      width: 90%;
-    }
+  .category-card h2 {
+    position: relative;
+    color: white;
+    z-index: 1;
+    font-size: 1.5rem;
+    line-height: 200px; /* Vertically center the text */
   }
-  /* Styling for exercise plan images */
-.plan {
+  
+  /* Plans Section */
+  .plans-container {
+    margin-top: 3rem;
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
   }
   
-  .plan-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 5px;
-    object-fit: cover;
+  .plan {
+    flex: 1 1 calc(33.33% - 2rem);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
   }
+  
+  .plan:hover {
+    transform: scale(1.03);
+  }
+  
+  .plan img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .plan h4 {
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .plan p {
+    color: #555;
+  }
+  
