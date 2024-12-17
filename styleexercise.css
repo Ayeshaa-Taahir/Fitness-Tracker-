@@ -1,0 +1,92 @@
+/* styleexercise.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header.exercise-header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main.exercise-main {
+    padding: 2rem;
+  }
+  
+  .workout-categories {
+    margin-bottom: 2rem;
+  }
+  
+  .categories {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+  
+  .category-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .workout-plans {
+    margin-bottom: 2rem;
+  }
+  
+  #plans-container {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 150px;
+  }
+  
+  .progress-tracker {
+    text-align: center;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .categories {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .category-card {
+      width: 90%;
+    }
+  }
+  /* Styling for exercise plan images */
+.plan {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .plan-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
