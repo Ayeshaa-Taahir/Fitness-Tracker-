@@ -329,7 +329,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   
   /* Personalized Tracking Section (White Background) */
   .personalized-tracking-section {
@@ -458,15 +458,39 @@ nav ul li a:hover {
  
  /* Footer Section */
  .footer {
-  padding: 20px;
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  height: 35px; /* Set a fixed height */
+  background-color: #333333;
+  color: white;
+  width: 100%;
+  position: relative;
+  font-size: 0.9rem;
+  padding: 0 10px; /* Horizontal padding */
+  line-height: 1.2; /* Adjust line height to ensure text is centered properly */
+}
+
+.footer p {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+
+ /*.footer {
+  height: 25px !important; /* Forces a fixed height 
+  padding: 5px 10px; /* Reduced padding 
+  /*padding: 0.5px;
   background-color: #333333;
   color: white;
   text-align: center;
+  align-items: center; /* Vertically center the content 
+  justify-content: center; /* Horizontally center the content 
   width: 100%;
   position: relative;
 }
   
-  .footer h2 {
+  /*.footer h2 { 
     font-size: 2.2rem;
     color: #ffcc00;
     margin-bottom: 10px;
@@ -474,12 +498,12 @@ nav ul li a:hover {
   
   .footer-links {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    justify-content: center; /* Center items vertically in available space */
+    flex-direction: column; /* Stack items vertically
+    align-items: center; /* Center items 
+    justify-content: center; /* Center items vertically in available space 
     margin-bottom: 0;
     padding: 0;
-    height: 150px; /* Ensure there's enough height for centering */
+    height: 150px; /* Ensure there's enough height for centering 
   }
   
   .footer-links ul {
@@ -490,7 +514,7 @@ nav ul li a:hover {
   
   .footer-links ul li {
     font-size: 1rem;
-    margin: 10px 0; /* Add spacing between links */
+    margin: 10px 0; /* Add spacing between links 
   }
   
   .footer-links ul li a {
@@ -502,13 +526,13 @@ nav ul li a:hover {
   
   .footer-links ul li a:hover {
     color: #ffcc00;
-  }
+  } 
   
   .footer .social-links {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 0px; /* Adjusted small gap after Pricing */
+    margin-top: 0px; /* Adjusted small gap after Pricing 
   }
   
   .footer .social-links a {
@@ -531,11 +555,11 @@ nav ul li a:hover {
   .footer p span {
     font-weight: bold;
     color: #ffcc00;
-  }
+  } 
   
   .footer .footer-bottom {
-    margin-top: 3px; /* Adjusted margin to have minimal space */
-    padding: 10px;
+    margin-top: 3px; /* Adjusted margin to have minimal space 
+    padding: 20px;
     background-color: #222222;
     text-align: center;
     font-size: 0.9rem;
@@ -544,8 +568,24 @@ nav ul li a:hover {
   
   .footer .footer-bottom span {
     color: #ffcc00;
-  }
+  } */
   
+/* Footer Bottom Section Styling 
+.footer .footer-bottom {
+  /*margin-top: 3px; /* Adds a small margin at the top 
+  padding: 3px; /* Adds padding inside the footer-bottom section 
+  background-color: #222222; /* Sets the background color to a darker shade 
+  text-align: center; /* Centers the text inside the footer-bottom section 
+  font-size: 0.9rem; /* Sets a smaller font size for the footer-bottom text 
+  color: #bbb; /* Sets the color of the footer-bottom text to light gray 
+}*/
+
+/* Footer Bottom Span Styling */
+.footer .footer-bottom span {
+  color: #ffcc00; /* Changes the color of the text inside the span to yellow */
+}
+
+
   /* Mobile responsiveness */
   @media (max-width: 768px) {
     .footer-links {
