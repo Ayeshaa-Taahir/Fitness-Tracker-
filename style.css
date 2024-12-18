@@ -28,21 +28,6 @@ section{
    padding: 3rem 9%;
 }
 
-.btn{
-   display: inline-block;
-   margin-top: 1rem;
-   padding: 1rem 3rem;
-   border: .1rem solid var(--white);
-   border-radius: .5rem;
-   cursor: pointer;
-   font-size: 1.7rem;
-   color: var(--white);
-}
-
-.btn:hover{
-   background: var(--main-color);
-   color: var(--black);
-}
 
 .header-section{
   position: fixed;
@@ -58,7 +43,7 @@ section{
 }
 
 .header-section .logo{
-  font-size: 2.2rem;
+  font-size: 3.5rem;
   font-weight: bolder;
   color: var(--main-color);
 }
@@ -81,13 +66,15 @@ section{
 }
 
 .home-section{
-   min-height: 100vh ;
+   height: 100vh ;
    display: flex;
    align-items: center;
    justify-content: center;
    background: url(https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   text-align: center;
+
 }
 
 .home-section .content{
@@ -96,10 +83,9 @@ section{
 }
 
 .home-section .content h3{
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
-  color: var(--main-color);
-  padding-bottom: 3.5rem;
+  color: #0a3a2d;
 }
 
 /* body {
@@ -117,14 +103,14 @@ section{
     padding: 50px 20px;
     background-color: black;
     width: 100%;
-  }
+  }*/
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  .logo { /*fitnesss traker text*/
+  /*.logo { /*fitnesss traker text*/
     /*font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-size: 5rem; /* Increase the font size */
    /* font-weight: 600; /* Make the text bold */
@@ -220,14 +206,14 @@ nav ul li a:hover {
 /*}
 
 /* Ensure the content is above the overlay */
-/*.container {
+.container {
   position: relative;
   z-index: 2;
   width: 100%;
   padding: 20px;
 }
 
-h1.logo { /*fitness tracker text*/
+/*h1.logo { /*fitness tracker text*/
   /*font-size: 4rem;
   margin: 0;
 }
@@ -454,94 +440,138 @@ nav ul li a:hover {
     font-size: 1.2rem;
     color: #990000;
   }
-  
-  /* Join Now Box */
-  .final-join-box {
-    padding: 40px 20px;
-    background-color: #990000;
-    color: white;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .final-join-box h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .final-join-box p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .join-form input {
-    padding: 12px;
-    width: 100%;
-    max-width: 400px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #444;
-  }
-  
-  .join-now-button {
-    padding: 12px 20px;
-    background-color: #cc3333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    width: 25%;
-    max-width: 150px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .join-now-button:hover {
-    background-color: #ff6666;
-  }
-  
-/* Footer Section */
- .footer {
-  display: flex; /* Use Flexbox */
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center the content */
-  height: 35px; /* Set a fixed height */
-  background-color: #333333;
-  color: white;
+
+  /* General Footer Styling */
+.footer-section {
+  background-color: #333;  /* Dark background for the footer */
+  color: #fff;  /* White text */
+  padding: 4rem 0;  /* Top and bottom padding */
+  text-align: center;
+}
+
+/* Container for the content */
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;  /* Padding on left and right */
+}
+
+/* Footer Top */
+.footer-top {
+  margin-bottom: 2rem;
+}
+
+.footer-top h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-top p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+/* Form Styling */
+.join-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.join-form input[type="text"], 
+.join-form input[type="email"] {
   width: 100%;
-  position: relative;
-  font-size: 0.9rem;
-  padding: 0 10px; /* Horizontal padding */
-  line-height: 1.2; /* Adjust line height to ensure text is centered properly */
+  max-width: 400px;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
 }
 
-.footer p {
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
+.join-form input[type="text"]:focus, 
+.join-form input[type="email"]:focus {
+  border-color: #ff6347;  /* Focus border color */
 }
 
-
-/* Footer Bottom Span Styling */
-.footer .footer-bottom span {
-  color: #ffcc00; /* Changes the color of the text inside the span to yellow */
+.join-now-button {
+  padding: 1rem 2rem;
+  background-color: #ff6347;  /* Primary color */
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .footer-links {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer .social-links {
-      flex-direction: column;
-    }
-  
-    .footer .footer-bottom {
-      padding: 15px;
-      font-size: 1rem;
-    }
+.join-now-button:hover {
+  background-color: #e5533d;  /* Hover effect */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background-color: #222;  /* Slightly darker background for the bottom */
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+}
+
+/* Social Links */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 1rem;
+}
+
+.social-links li a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #ff6347;  /* Change color on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .footer-top h2 {
+      font-size: 2rem;
   }
-    }} 
-  
+
+  .footer-top p {
+      font-size: 1rem;
+  }
+
+  .join-form input[type="text"], 
+  .join-form input[type="email"] {
+      width: 80%;
+  }
+
+  .join-now-button {
+      font-size: 1rem;
+  }
+
+  .social-links li a {
+      font-size: 1.2rem;
+  }
+}
+
+}}
