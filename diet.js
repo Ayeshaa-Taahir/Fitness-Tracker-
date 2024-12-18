@@ -1,33 +1,33 @@
-// Example: diet.js
-document.getElementById("add-food-btn").addEventListener("click", function () {
-    const foodInput = document.getElementById("food-input");
-    const calorieInput = document.getElementById("calorie-input");
-  
-    const food = foodInput.value.trim();
-    const calories = parseInt(calorieInput.value.trim(), 10);
-  
-    if (food && calories > 0) {
-      let calorieData = JSON.parse(localStorage.getItem("calorieData")) || [];
-      calorieData.push({ food, calories });
-      localStorage.setItem("calorieData", JSON.stringify(calorieData));
-  
-      // Update the calorie display
-      updateCalorieList(calorieData);
+// Get references to the necessary HTML elements
+const trackButton = document.getElementById("track-btn");
+const foodItemInput = document.getElementById("food-item");
+const caloriesInput = document.getElementById("calories");
+const foodList = document.getElementById("food-list");
+const totalCaloriesDisplay = document.getElementById("total-calories");
+
+// Initialize total calories variable
+let totalCalories = 0;
+
+// Add event listener for button click
+trackButton.addEventListener("click", function() {
+    const foodItem = foodItemInput.value.trim();
+    const calories = parseInt(caloriesInput.value);
+
+    // Check if food item and calories are valid
+    if (foodItem && !isNaN(calories) && calories > 0) {
+        // Add the food item and calories to the food log list
+        const listItem = document.createElement("li");
+        listItem.textContent = `${foodItem}: ${calories} calories`;
+        foodList.appendChild(listItem);
+
+        // Update total calories
+        totalCalories += calories;
+        totalCaloriesDisplay.textContent = totalCalories;
+
+        // Clear the input fields for the next entry
+        foodItemInput.value = '';
+        caloriesInput.value = '';
     } else {
-      alert("Please enter valid food and calorie values.");
+        alert("Please enter a valid food item and positive calorie value.");
     }
-  });
-  
-  function updateCalorieList(data) {
-    const list = document.getElementById("calorie-list");
-    list.innerHTML = data
-      .map((item) => `<li>${item.food}: ${item.calories} kcal</li>`)
-      .join("");
-  }
-  
-  // Load calorie data on page load
-  window.addEventListener("DOMContentLoaded", () => {
-    const storedData = JSON.parse(localStorage.getItem("calorieData")) || [];
-    updateCalorieList(storedData);
-  });
-  
+});
