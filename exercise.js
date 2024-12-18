@@ -9,13 +9,13 @@ const workoutPlans = {
         name: "Morning Run", 
         duration: "30 min", 
         intensity: "Moderate", 
-        image: "https://images.pexels.com/photos/29681929/pexels-photo-29681929/free-photo-of-jogger-running-on-tree-lined-path-in-abuja.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Add a reference to the image
+        image: "https://images.pexels.com/photos/3776857/pexels-photo-3776857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Add a reference to the image
       },
       { 
         name: "Cycling", 
         duration: "45 min", 
         intensity: "High", 
-        image: "https://images.pexels.com/photos/19431224/pexels-photo-19431224/free-photo-of-a-man-riding-a-bike-on-a-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image: "https://images.pexels.com/photos/386024/pexels-photo-386024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       },
     ],
     strength: [
@@ -23,7 +23,7 @@ const workoutPlans = {
         name: "Weight Lifting", 
         duration: "40 min", 
         intensity: "High", 
-        image: "https://images.pexels.com/photos/3757370/pexels-photo-3757370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+        image: "https://images.pexels.com/photos/371049/pexels-photo-371049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
       },
       { 
         name: "Push-ups", 
@@ -37,7 +37,7 @@ const workoutPlans = {
         name: "Yoga", 
         duration: "60 min", 
         intensity: "Low", 
-        image: "https://images.pexels.com/photos/4047042/pexels-photo-4047042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+        image: "https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
       },
       { 
         name: "stretching", 
