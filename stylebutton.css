@@ -15,7 +15,7 @@ body {
 
 /* Header background image and styling */
 header {
-  background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); /* Updated image URL */
+  background-image: url('https://img.freepik.com/free-photo/flat-lay-charts-organic-food-lunch-boxes_23-2148515964.jpg'); /* Updated image URL */
   background-size: cover;  /* Ensures the image covers the entire header */
   background-position: center;  /* Centers the image */
   color: white;
@@ -67,7 +67,7 @@ header::before {
 }
 
 .cta-button:hover {
-  background-color: #e53e3e;
+  background-color: #e84f4f;
 }
 
 /* Diet Plan Section */
@@ -145,181 +145,6 @@ header::before {
     font-size: 0.9rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-/* Diet Plans Section 
-.plans-section {
-  padding: 50px;
-  margin-top: 100px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.plans-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.plans-section p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-
-.header {
-  position: relative;
-  z-index: 1; /* Ensure header text is on top 
-}
-
-.plans-section {
-  position: relative;
-  z-index: 2; /* Ensure diet plans appear below header text 
-}
-
-
-
-/* Diet Plan Styling 
-#diet-plan {
-  padding: 50px;
-  background-color: #f4f4f4;
-  text-align: center;
-
-  /* margin-top: 20px; 
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#diet-plan h3 {
-  font-size: 2rem;
-  color: #4CAF50;
-  margin-bottom: 20px;
-}
-
-.day-plan {
-  margin-bottom: 30px;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.day-plan h4 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.diet-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));  /* Grid for responsive design 
-  gap: 20px;  /* Space between cards 
-  justify-items: center;
-}
-
-.day-card {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 320px;
-}
-
-.day-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.day-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;  /* Ensure images are cropped to fit the card 
-}
-
-.day-card h4 {
-  font-size: 1.6rem;
-  color: #333;
-  padding: 15px;
-  background-color: #23c629;
-  color: white;
-  margin: 0;
-}
-
-.day-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
-  padding-bottom: 15px;
-}
-
-.day-card li {
-  font-size: 1rem;
-  padding: 5px 0;
-  color: #555;
-}
-
-.day-card li strong {
-  color: #333;
-}
-
-/* Responsive Design 
-@media screen and (max-width: 768px) {
-  #diet-plan h3 {
-    font-size: 2rem;
-  }
-
-  .day-card h4 {
-    font-size: 1.4rem;
-  }
-
-  .day-card li {
-    font-size: 0.9rem;
-  }
-}
-
-
-/* Ensuring uniform spacing for list items 
-.day-plan ul {
-  list-style: none;
-  padding-left: 0;  /* Remove default list padding 
-  margin-left: 20px; /* Add left margin for uniform spacing 
-}
-
-.day-plan li {
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-  color: #555;
-  padding-left: 10px;  /* Ensure all text starts from the same point 
-}
-
-.day-plan li strong {
-  color: #333;
-}
-
-/* For Responsive Design 
-@media screen and (max-width: 768px) {
-  #diet-plan h3 {
-    font-size: 1.6rem;
-  }
-
-  .day-plan h4 {
-    font-size: 1.5rem;
-  }
-}
-
-
-
 
 
 /* Calorie Tracker Section */
