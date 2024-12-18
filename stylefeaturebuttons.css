@@ -29,13 +29,14 @@ main {
 
 /* Button Styles */
 .features-buttons button {
-  width: 250px;
-  height: 150px;
-  margin: 15px;
+  width: 280px;
+  height: 170px;
+  margin: 50px;
+  padding: 20px;
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   background-size: cover;
   background-position: center;
@@ -61,6 +62,10 @@ main {
 
 #exercises-btn {
   background-image: url('https://media.istockphoto.com/id/1395337483/photo/sports-and-gym-activities.jpg?b=1&s=612x612&w=0&k=20&c=SWFVIIBlzHmx-CX06dBPmr_IspP57e6wr3AzXrmVWiA='); /* Replace with the actual path */
+}
+
+#calories-btn {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/458/538/small/healthy-dieting-banner-template-with-with-food-icons-and-calculator-for-calories-counting-nutrition-plan-for-weight-control-slimming-and-health-flat-illustration-free-vector.jpg'); /* Replace with the actual path */
 }
 
 /* Responsive Design */

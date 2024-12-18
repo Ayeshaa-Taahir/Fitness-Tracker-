@@ -12,6 +12,11 @@ document.getElementById('dashboard-btn').addEventListener('click', () => {
   document.getElementById('exercises-btn').addEventListener('click', () => {
     window.location.href = 'exercise.html';
   });
+
+  document.getElementById('calories-btn').addEventListener('click', () => {
+    window.location.href = 'calories.html';
+  });
+
     // Add hover effects to display information
     const buttons = [dashboardBtn, dietPlanBtn, exercisesBtn];
     const buttonDescriptions = {
