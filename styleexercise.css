@@ -7,7 +7,7 @@ body {
   }
   
   header {
-    background-color: #2a9d8f;
+    background-color: #26b920;
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -36,6 +36,7 @@ body {
   .category-card {
     position: relative;
     width: 30%;
+    margin: 2rem;
     height: 200px;
     border-radius: 10px;
     overflow: hidden;
