@@ -70,7 +70,7 @@ section{
    display: flex;
    align-items: center;
    justify-content: center;
-   background: url(https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=600) no-repeat;
+   background: url(https://images.pexels.com/photos/17210050/pexels-photo-17210050/free-photo-of-man-exercising-at-the-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat;
    background-size: cover;
    background-attachment: fixed;
    text-align: center;
@@ -83,14 +83,14 @@ section{
 }
 
 .home-section .content h3{
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
-  color: #45d49d;
+  color: #2acb38;
 }
 
   
   .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   
@@ -156,7 +156,7 @@ section{
 
 .track-fitness-goals-easily p { 
   font-size: 2rem;
-  color: #20b84d; /* Slightly lighter black for better contrast */
+  color: white; /* Slightly lighter black for better contrast */
   line-height: 1.5;
   max-width: 800px;
   margin: 0 auto;
@@ -187,7 +187,7 @@ section{
   
   .motivated-accountable-section p { /* subheading text */
     font-size: 2rem;
-    color: rgb(26, 1, 1);
+    color: white;
     line-height: 1.5;
     max-width: 800px;
     margin: 0 auto;
@@ -218,7 +218,7 @@ section{
 
 .personalized-tracking-section p {
   font-size: 2rem;
-  color: #20b84d; /* Lighter green for better contrast */
+  color: white; /* Lighter green for better contrast */
   line-height: 1.5;
   max-width: 800px;
   margin: 0 auto;
@@ -246,7 +246,7 @@ section{
   
   .call-to-action p { /* Subheading text */
     font-size: 2rem; 
-    color: rgb(26, 1, 1);
+    color: white;
     line-height: 1.5;
     max-width: 800px;
     margin: 0 auto;
