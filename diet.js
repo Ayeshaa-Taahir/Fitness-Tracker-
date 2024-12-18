@@ -31,3 +31,17 @@ trackButton.addEventListener("click", function() {
         alert("Please enter a valid food item and positive calorie value.");
     }
 });
+
+
+// Toggle visibility of each day's plan when clicked
+const dayPlans = document.querySelectorAll('.day-plan');
+
+dayPlans.forEach(dayPlan => {
+  dayPlan.addEventListener('click', function() {
+    this.classList.toggle('active');
+    const isActive = this.classList.contains('active');
+    this.style.backgroundColor = isActive ? '#e0f7fa' : '#fff';
+  });
+});
+
+
