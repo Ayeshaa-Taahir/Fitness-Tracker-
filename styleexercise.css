@@ -159,3 +159,105 @@ body {
   background-color: #ccc;
   cursor: not-allowed;
 }
+.workout-plan {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.workout-plan h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.start-timer-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.start-timer-btn:hover {
+  background-color: #0056b3;
+}
+
+.stop-timer-btn {
+  background-color: #dc3545;
+}
+
+.timer-display {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+/* General container styles */
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Workout plan card styles */
+.workout-plan {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.workout-plan:hover {
+  transform: scale(1.05);
+}
+
+/* Image styles */
+.workout-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Timer and button styles */
+.timer-display {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.start-timer-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-timer-btn:hover {
+  background-color: #218838;
+}
+
+.stop-timer-btn {
+  background-color: #dc3545;
+}
+
+.stop-timer-btn:hover {
+  background-color: #c82333;
+}
+
