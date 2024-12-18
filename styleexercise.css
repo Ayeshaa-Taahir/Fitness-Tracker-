@@ -30,13 +30,13 @@ body {
   .category-buttons {
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
   
   .category-card {
     position: relative;
     width: 75%;
-    margin: 2rem;
+    margin: 1rem;
     height: 200px;
     border-radius: 10px;
     overflow: hidden;

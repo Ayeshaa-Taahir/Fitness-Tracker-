@@ -1,6 +1,118 @@
 /* Calorie Tracker Section */
+/* Set a background image for the entire page */
+body {
+  background-image: url('https://cst.brightspotcdn.com/dims4/default/32c3fc8/2147483647/strip/true/crop/4367x2911+0+184/resize/840x560!/quality/90/?url=https%3A%2F%2Fchorus-production-cst-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2F40%2F42%2Fb2877a324a8ba378bedd44651fdb%2Fadobestock-289813412.jpeg'); /* Replace  image path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the background image */
+  background-attachment: scroll; /* Allows the background to move with the page as you scroll */
+  /*background-attachment: fixed;  Keeps the background fixed while scrolling */
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-#calorie-tracker { /*track your calories text*/
+/* Calorie Tracker Section */
+#calorie-tracker {
+  background-color: #d4f7bf; /* Solid background color for the calorie tracker section */
+  font-size: 1.2rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and food log */
+#calorie-tracker h2 {
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  color: #0d6510;
+  text-align: center;
+}
+
+/* Form styling */
+#calorie-form {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#calorie-form label {
+  font-weight: bold;
+}
+
+#calorie-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling */
+.track-button {
+  background-color: #23c629;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.track-button:hover {
+  background-color: #45a049;
+}
+
+/* Food log section */
+#food-log {
+  margin-top: 1rem;
+}
+
+#food-log h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+#food-list {
+  list-style: none;
+  padding: 0;
+}
+
+#food-list li {
+  background-color: #f9f9f9;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: auto 100%; /* Adjust the background image size for smaller screens */
+  }
+
+  #calorie-tracker {
+    background-size: contain; /* Ensure the background image is contained on smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+/*#calorie-tracker { /*track your calories text
     background-color: #d4f7bf;
     font-size: 1.2rem;
     margin: 1.5rem auto;
@@ -11,7 +123,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  #calorie-tracker h2 { /*food log*/
+  #calorie-tracker h2 { /*food log
     font-size: 1.7rem;
     font-family: sans-serif;
     color: #0d6510;
@@ -35,7 +147,7 @@
   }
 
 
-  .track-button { /* Button styling */
+  .track-button { /* Button styling 
     background-color: #23c629;
     color: white;
     border: none;
@@ -70,7 +182,7 @@
     border: 1px solid #ddd;
   }
   
-  /* Footer styling */
+  /* Footer styling 
   footer {
     text-align: center;
     padding: 20px;
@@ -81,7 +193,7 @@
   }
   
 
-  /* Responsive Design */
+  /* Responsive Design 
   @media screen and (max-width: 768px) {
     .header h1 {
         font-size: 2.5rem;
@@ -94,5 +206,5 @@
     .cta-button {
         padding: 12px 20px;
     }
-  }
+  } */
   
