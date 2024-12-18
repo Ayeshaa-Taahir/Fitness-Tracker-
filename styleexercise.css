@@ -21,7 +21,7 @@ body {
   
   /* Container Styling */
   .container {
-    max-width: 1200px;
+    max-width: 2500px;
     margin: 0 auto;
     padding: 2rem;
   }
@@ -35,7 +35,7 @@ body {
   
   .category-card {
     position: relative;
-    width: 30%;
+    width: 75%;
     margin: 2rem;
     height: 200px;
     border-radius: 10px;
@@ -107,10 +107,10 @@ body {
   }
   
   .plan img {
-    width: 100%;
-    height: 150px;
+    width: 2000%;
+    height: 200px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
   }
   
   .plan h4 {
@@ -123,7 +123,7 @@ body {
   /* Workout Plan Cards */
 .plan-card {
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: px;
   padding: 16px;
   margin: 16px 0;
   background-color: #f9f9f9;
@@ -149,7 +149,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 7rem;
 }
 
 .plan-card button:hover {
@@ -171,7 +171,7 @@ body {
 
 .workout-plan h3 {
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #333;
 }
 
