@@ -85,7 +85,7 @@ section{
 .home-section .content h3{
   font-size: 4rem;
   text-transform: uppercase;
-  color: #0a3a2d;
+  color: #45d49d;
 }
 
   
@@ -138,34 +138,35 @@ section{
   }
   
   
- /*Fitness Goals Section */
-.fitness-goals-section { /*Track fitness goals... back */
-    text-align: center;
-    padding: 40px 20px;
-    background-color: rgb(150, 239, 141);
-    color: rgb(26, 1, 1);
-    width: 100%;
-  }
-  
-  .fitness-goals-section h3 { /*Track fitness goals... text */
-    /font-size: 2rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-  
-  .fitness-goals-section p { /*Track fitness goals... below text*/
-    font-size: 1rem;
-    color: #000000;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .fitness-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
+ /* Fitness Goals Section */
+.track-fitness-goals-easily { 
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(44, 40, 41); /* Green background */
+  color: rgb(26, 1, 1);  /* Dark color for text */
+  width: 100%;
+}
+
+.track-fitness-goals-easily h3 { 
+  font-size: 2.3rem;  /* Fixed font-size issue */
+  color: #0cbc6a;  /* White text for the heading */
+  margin-bottom: 10px;
+}
+
+.track-fitness-goals-easily p { 
+  font-size: 1.5rem;
+  color: #20b84d; /* Slightly lighter black for better contrast */
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fitness-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
   
   /* Stay Motivated and Accountable Section (Black Background) */
   .motivated-accountable-section { /*Background*/
@@ -191,41 +192,35 @@ section{
 
   
   /* Personalized Tracking Section (White Background) */
-  .personalized-tracking-section { /*background */
-    text-align: center;
-    padding: 40px 20px;
-    background-color: rgb(150, 239, 141);  /* background color */
-    width: 100%;
-  }
-  
-  .personalized-tracking-section h3 { /* Heading text */
-    font-size: 2rem;
-    color: #ffffff; /* Dark Maroon */
-    margin-bottom: 10px;
-  }
-  
-  .personalized-tracking-section p { /* Subheading text */
-    font-size: 1rem;
-    color: #000000;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+  /* Personalized Tracking Section */
+.personalized-tracking-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(44, 40, 41); /* Dark background */
+  color: rgb(26, 1, 1);  /* Dark color for text */
+  width: 100%;
+}
 
-  /* Image with Call to Action Section */
-  .fitness-image-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: black;
-    color: white;
-    width: 100%;
-  }
-  
-  .fitness-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px; /* Added margin to push the image down */
-  }
+.personalized-tracking-section h3 {
+  font-size: 3rem;  /* Heading font-size */
+  color: #13c288;  /* Green color for the heading */
+  margin-bottom: 10px;
+}
+
+.personalized-tracking-section p {
+  font-size: 1.5rem;
+  color: #20b04b; /* Lighter green for better contrast */
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fitness-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px; /* Margin to push the image down */
+}
+
   
   .call-to-action h3 { /*PERSONAL FITNESS TRACKER TEXT */
     font-size: 2rem;
