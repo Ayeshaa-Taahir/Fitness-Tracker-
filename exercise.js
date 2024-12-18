@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Push Ups", image: "https://images.pexels.com/photos/3763885/pexels-photo-3763885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
       ],
       flexibility: [
-        { name: "Yoga", image: "https://images.pexels.com/photos/3763885/pexels-photo-3763885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
+        { name: "Yoga", image: "https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
         { name: "Stretching", image: "https://images.pexels.com/photos/5384538/pexels-photo-5384538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
       ],
     };
