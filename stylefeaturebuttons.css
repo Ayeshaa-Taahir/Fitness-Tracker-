@@ -31,12 +31,12 @@ main {
 .features-buttons button {
   width: 290px;
   height: 180px;
-  margin: 40px;
+  margin: 50px;
   padding: 20px;
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: bold;
   background-size: cover;
   background-position: center;
