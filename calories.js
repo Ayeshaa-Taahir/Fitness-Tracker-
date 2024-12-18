@@ -36,6 +36,8 @@ trackButton.addEventListener('click', function() {
     totalCalories += calories;
     totalCaloriesElement.textContent = totalCalories;
 
+    
+
     // Clear the input fields after adding
     foodInput.value = "";
     caloriesInput.value = "";
