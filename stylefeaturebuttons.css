@@ -29,14 +29,16 @@ main {
 
 /* Button Styles */
 .features-buttons button {
-  width: 290px;
-  height: 180px;
-  margin: 20px;
-  padding: 20px;
+  align-items: normal;
+  width: 300px;
+  height: 179px;
+  margin: 50px;
+  padding: 10px;
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 1.9rem;
+  font-size: 2rem;
+  justify-content: center;
   font-weight: bold;
   background-size: cover;
   background-position: center;
@@ -53,7 +55,7 @@ main {
 
 /* Background Images */
 #dashboard-btn {
-  background-image: url('https://cdn.shopify.com/s/files/1/0534/2583/2130/files/30_intresting_fitness_stats_2.jpg?v=1663362976'); /* Replace with the actual path */
+  background-image: url('https://www.shutterstock.com/image-illustration/multi-colored-pie-chart-by-260nw-2240939063.jpg'); /* Replace with the actual path */
 }
 
 #diet-plan-btn {
