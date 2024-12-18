@@ -230,32 +230,34 @@ section{
   margin-top: 20px; /* Margin to push the image down */
 }
 
-  .call-to-action{
+.call-to-action{
     text-align: center;
     padding: 40px 20px;
     background-color: #0cbc6a; /* Dark background */
     color: rgb(26, 1, 1);  /* Dark color for text */
     width: 100%;
-  }
-  .call-to-action h3 { /*PERSONAL FITNESS TRACKER TEXT */
+}
+/*.call-to-action h3 { /*PERSONAL FITNESS TRACKER TEXT 
     font-size: 3rem;
     color: rgb(26, 1, 1); 
     margin-bottom: 10px;
     margin-top: 0;
-  }
+}
   
-  .call-to-action p { /* Subheading text */
+.call-to-action p { /* Subheading text 
     font-size: 2rem; 
     color: white;
     line-height: 1.5;
     max-width: 800px;
     margin: 0 auto;
-  }
-  .fitness-image {
+}
+
+.fitness-image {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-  }
+}*/
+
   /* Mobile responsiveness */
   @media (max-width: 768px) {
     .track-fitness-goals-easily h3, .motivated-accountable-section h3, .personalized-tracking-section h3, .call-to-action h3 {
