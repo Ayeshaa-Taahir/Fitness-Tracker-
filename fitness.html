@@ -3,34 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Tracker</title>
+    <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-black text-white">
+<!--<body class="bg-black text-white">-->
 
  <!-- Header Section -->
 <header class="header-section">
-  <div class="container">
-    <!-- Logo and Heading -->
-    <h1 class="logo">Fitness Tracker</h1>
-    <p class="subheading">Achieve your personal fitness goals today!</p>
-    <nav>
-      <ul>
-        <li><a href="#home-section">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+ 
+    <a href="#" class="logo">Fitness Tracker</a> 
+    <nav class="navbar">
+      
+        <a href="#home-section">Home</a>
+        <a href="features.html">Features</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </div>
+  <div class="fas fa-bars" id="menu"></div>
 </header>
 
-<div class="container" id="home-section">  
-  <p class="subheading">Achieve your personal fitness goals today!</p>
-</div>
+<!-- home section -->
 
+<section class="home-section" id="home-section">
+
+     <div class="content" >
+         <h3>Achieve your personal fitness goals today </h3>
+         <a href="#" class="btn"> read more </a>
+     </div>
+
+</section>
+
+<div class="container" id="home-section">  
+</div>
 
   <!-- Track Fitness Goals Easily Section -->
   <section class="fitness-goals-section">
