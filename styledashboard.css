@@ -1,39 +1,50 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  }
-  
-  header {
-    background-color: #31e72b;
+  /* Global Styles */
+
+header {
+    background-color: #31e72b !important; /* Adding !important will force this style */
     color: white;
   }
   
-  h1, h3 {
-    color: #46e838;
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light background color for the body */
+}
+
+/* Header Styles - This controls the background color of the header */
+header {
+  background-color: #31e72b; /* Green color for the header background */
+  color: white; /* Text color for the header */
+}
+
+/* Heading Styles for h1 and h3 */
+h1, h3 {
+  color: #46e838; /* Greenish color for h1 and h3 */
+}
+
+/* Card Styles - Controls the design of each card on the dashboard */
+.card {
+  background-color: #fff; /* White background for cards */
+  border: none; /* No border around cards */
+  border-radius: 8px; /* Rounded corners for cards */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+}
+
+/* Footer Styles */
+footer {
+  color: #ffffff; /* White text color */
+}
+
+footer p {
+  background-color: #1f1e1e; /* Dark background for footer */
+  margin: 0; /* Remove margin */
+}
+
+/* Responsive Styles for smaller screens (less than 768px) */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column; /* Stack rows vertically on small screens */
   }
-  
-  .card {
-    background-color: #fff;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  footer {
-    background-color: #f1f1f1;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
-    }
-  }
-  
+}

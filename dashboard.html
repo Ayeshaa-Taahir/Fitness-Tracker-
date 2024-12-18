@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Charset for proper text encoding -->
   <meta charset="UTF-8">
+  
+  <!-- Makes sure the page is responsive on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title of the page displayed on browser tab -->
   <title>Fitness Tracker Dashboard</title>
+  
+  <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="styledashboard.css">
+  
+  <!-- Bootstrap CSS from CDN for grid system and additional styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Chart.js CDN to create charts -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
 </head>
 <body>
+  <!-- Header Section with background color and text -->
   <header class="bg-primary text-white p-3">
     <h1 class="text-center">Fitness Tracker Dashboard</h1>
   </header>
 
+  <!-- Main Container for Dashboard -->
   <div class="container my-4">
-    <!-- Stats Overview -->
+    <!-- Stats Overview Section -->
     <section class="row text-center mb-5">
       <div class="col-md-4">
         <div class="card p-4 shadow-sm">
@@ -36,7 +50,7 @@
       </div>
     </section>
 
-    <!-- Graph Section -->
+    <!-- Progress Charts Section -->
     <section>
       <h3 class="mb-4">Progress Charts</h3>
       <div class="row">
@@ -50,20 +64,12 @@
     </section>
   </div>
 
+  <!-- Footer Section -->
   <footer class="bg-light text-center py-3">
     <p>&copy; 2024 Fitness Tracker | All rights reserved</p>
   </footer>
 
+  <!-- Link to external JavaScript file (Dashboard functionality) -->
   <script src="dashboard.js"></script>
 </body>
 </html>
-<main>
-  <!-- Other dashboard cards 
-  <div class="card" id="calorie-card">
-    <h2>Total Calories</h2>
-    <p>Loading...</p>
-  </div> -->
-
-  <!-- Chart for calorie breakdown -->
-  <canvas id="calorie-chart" width="400" height="200"></canvas>
-</main>

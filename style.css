@@ -386,15 +386,16 @@ section{
 }
 
 /* Footer Bottom */
-.footer-bottom {
+.footer-section {
   margin-top: 3rem;
   padding: 2rem 0;
-  background-color: #222;  /* Slightly darker background for the bottom */
+  color: rgba(235, 13, 13, 0.6);
+  
 }
 
-.footer-bottom p {
+.footer-section p {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
+  background-color: #222;  /* Slightly darker background for the bottom */
   margin-bottom: 1rem;
 }
 
