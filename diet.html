@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Page</title>
+    <link rel="stylesheet" href="stylebutton.css">
+    <script src="diet.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section with Background Image -->
+    <header>
+        <div class="header-content">
+            <h1>Welcome to Our Healthy Diet Plan</h1>
+            <p>Your journey to a healthier life starts here!</p>
+            <a href="#plans" class="cta-button">View Diet Plans</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="plans" class="plans-section">
+        <h2>Our Diet Plans</h2>
+        <p>Choose from a variety of diet plans tailored to your needs.</p>
+    </section>
+
+
+
+<!-- Container where new items will appear 
+<div id="food-log">
+   The food items will be added dynamically here 
+</div> -->
+
+
+<!-- Calorie Tracker Section -->
+    <section id="calorie-tracker">
+        <h2>Track Your Calories</h2>
+        <form id="calorie-form">
+            <label for="food-item">Food Item:</label>
+            <input type="text" id="food-item" name="food-item" placeholder="Enter food item">
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" name="calories" placeholder="Enter calories">
+            <button type="button" id="track-btn" class="track-button">Track</button>
+        </form>
+        
+        <div>
+          <p>Total Calories: <span id="total-calories">0</span></p>
+          <h3>Your Food Log:</h3>
+          <ul id="food-list"></ul>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <p>© 2024 Healthy Diet Plans. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
