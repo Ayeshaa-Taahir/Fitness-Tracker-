@@ -29,7 +29,6 @@ main {
 
 /* Button Styles */
 .features-buttons button {
-  align-items: normal;
   width: 300px;
   height: 179px;
   margin: 50px;
@@ -38,7 +37,6 @@ main {
   border-radius: 10px;
   color: white;
   font-size: 2rem;
-  justify-content: center;
   font-weight: bold;
   background-size: cover;
   background-position: center;
