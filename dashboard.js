@@ -1,109 +1,60 @@
-// Sample Data
+  // Sample Data (replace with actual data in a real app)
 const calorieData = [500, 600, 700, 800, 900, 1000];
 const workoutData = [1, 2, 1.5, 2, 2.5, 3];
 
 // Total Calculations
-const totalCalories = calorieData.reduce((a, b) => a + b, 0);
-const totalWorkouts = workoutData.reduce((a, b) => a + b, 0);
-const weeklyProgress = ((totalCalories / 7000) * 100).toFixed(1); // Assuming 7000 as target
+const totalCalories = calorieData.reduce((a, b) => a + b, 0); // Sum of all calories consumed
+const totalWorkouts = workoutData.reduce((a, b) => a + b, 0); // Sum of all workout hours
+const weeklyProgress = ((totalCalories / 7000) * 100).toFixed(1); // Calculate weekly progress assuming a target of 7000 calories
 
 // Update Stats on Dashboard
 document.getElementById('total-calories').textContent = totalCalories;
 document.getElementById('total-workouts').textContent = totalWorkouts;
 document.getElementById('weekly-progress').textContent = weeklyProgress + "%";
 
-// Calories Chart
+// Calories Chart using Chart.js
 const caloriesChartCtx = document.getElementById('caloriesChart').getContext('2d');
 new Chart(caloriesChartCtx, {
-  type: 'bar',
+  type: 'bar', // Bar chart for calories
   data: {
-    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], // Labels for each day
     datasets: [{
-      label: 'Calories Consumed',
-      data: calorieData,
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-      borderColor: 'rgba(75, 192, 192, 1)',
-      borderWidth: 1
+      label: 'Calories Consumed', // Label for the dataset
+      data: calorieData, // Data to display
+      backgroundColor: 'rgba(75, 192, 192, 0.2)', // Light teal background for bars
+      borderColor: 'rgba(75, 192, 192, 1)', // Darker teal for the border
+      borderWidth: 1 // Border width for the bars
     }]
   },
   options: {
-    responsive: true,
+    responsive: true, // Make the chart responsive
     plugins: {
-      legend: { display: true }
+      legend: { display: true } // Display the legend
     }
   }
 });
 
-// Workouts Chart
+// Workouts Chart using Chart.js
 const workoutsChartCtx = document.getElementById('workoutsChart').getContext('2d');
 new Chart(workoutsChartCtx, {
-  type: 'line',
+  type: 'line', // Line chart for workout data
   data: {
-    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], // Labels for each day
     datasets: [{
-      label: 'Workout Hours',
-      data: workoutData,
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-      borderColor: 'rgba(255, 99, 132, 1)',
-      borderWidth: 1,
-      tension: 0.4
+      label: 'Workout Hours', // Label for the dataset
+      data: workoutData, // Data to display
+      backgroundColor: 'rgba(255, 99, 132, 0.2)', // Light red background for the line
+      borderColor: 'rgba(255, 99, 132, 1)', // Dark red for the border of the line
+      borderWidth: 1, // Border width
+      tension: 0.4 // Smooth the line
     }]
   },
   options: {
-    responsive: true,
+    responsive: true, // Make the chart responsive
     plugins: {
-      legend: { display: true }
+      legend: { display: true } // Display the legend
     }
   }
 });
-// Example: dashboard.js
 
-// Load calorie data and render on the dashboard
-function loadCalorieData() {
-    const calorieData = JSON.parse(localStorage.getItem("calorieData")) || [];
-  
-    // Calculate total calories
-    const totalCalories = calorieData.reduce((sum, item) => sum + item.calories, 0);
-  
-    // Update the UI
-    const calorieCard = document.getElementById("calorie-card");
-    calorieCard.innerHTML = `
-      <h2>Total Calories</h2>
-      <p>${totalCalories} kcal</p>
-    `;
-  
-    // Render chart if data exists
-    if (calorieData.length > 0) {
-      const labels = calorieData.map((item) => item.food);
-      const data = calorieData.map((item) => item.calories);
-  
-      const ctx = document.getElementById("calorie-chart").getContext("2d");
-      new Chart(ctx, {
-        type: "bar",
-        data: {
-          labels: labels,
-          datasets: [
-            {
-              label: "Calories",
-              data: data,
-              backgroundColor: "rgba(75, 192, 192, 0.2)",
-              borderColor: "rgba(75, 192, 192, 1)",
-              borderWidth: 1,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
-          },
-        },
-      });
-    }
-  }
-  
-  // Call the function on page load
-  window.addEventListener("DOMContentLoaded", loadCalorieData);
   

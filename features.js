@@ -38,7 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
   
         // Position info box near the button
         const rect = button.getBoundingClientRect();
+
+        // Calculate the left position for the infoBox based on the button's position
+        // rect.left gives the distance from the left edge of the viewport to the button's left edge.
+        // window.scrollX accounts for the horizontal scroll offset (in case the page is scrolled horizontally).
+        // rect.width / 2 moves the infoBox to the horizontal center of the button.       
         infoBox.style.left = `${rect.left + window.scrollX + rect.width / 2}px`;
+
+        
         infoBox.style.top = `${rect.top + window.scrollY - 30}px`;
       });
   
