@@ -13,13 +13,14 @@
 }
 
 .day-card {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 320px;
+  max-width: 370px;
 }
 
 .day-card:hover {
@@ -73,36 +74,3 @@
     font-size: 0.9rem;
   }
 }
-
-
-/* Calorie Tracker Section */
-#calorie-tracker {
-  background-color: #fff;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  max-width: 600px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#calorie-tracker h2 {
-  color: #4CAF50;
-  text-align: center;
-}
-
-#calorie-form {
-  display: grid;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-#calorie-form label {
-  font-weight: bold;
-}
-
-#calorie-form input {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-

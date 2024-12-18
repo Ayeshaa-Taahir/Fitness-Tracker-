@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #27cf21; /*  background */
+  background-color: #26b920; /*  background */
   color: white;
   padding: 20px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -29,9 +29,9 @@ main {
 
 /* Button Styles */
 .features-buttons button {
-  width: 280px;
-  height: 170px;
-  margin: 50px;
+  width: 290px;
+  height: 180px;
+  margin: 40px;
   padding: 20px;
   border: none;
   border-radius: 10px;
@@ -53,7 +53,7 @@ main {
 
 /* Background Images */
 #dashboard-btn {
-  background-image: url('https://www.competitionsciences.org/wp-content/uploads/2020/10/statistics-graph-illustration.jpg'); /* Replace with the actual path */
+  background-image: url('https://st4.depositphotos.com/6002972/22796/v/1600/depositphotos_227961422-stock-illustration-modern-progress-bar-business-chart.jpg'); /* Replace with the actual path */
 }
 
 #diet-plan-btn {

@@ -9,7 +9,7 @@ const workoutPlans = {
         name: "Morning Run", 
         duration: "30 min", 
         intensity: "Moderate", 
-        image: "https://images.pexels.com/photos/3776857/pexels-photo-3776857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Add a reference to the image
+        image: "https://images.pexels.com/photos/4719931/pexels-photo-4719931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Add a reference to the image
       },
       { 
         name: "Cycling", 

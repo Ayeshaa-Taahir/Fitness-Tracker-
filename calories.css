@@ -1,15 +1,20 @@
 /* Calorie Tracker Section */
-#calorie-tracker {
-    background-color: #fff;
-    margin: 2rem auto;
+
+#calorie-tracker { /*track your calories text*/
+    background-color: #d4f7bf;
+    font-size: 1.2rem;
+    margin: 1.5rem auto;
     padding: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  #calorie-tracker h2 {
-    color: #4CAF50;
+  #calorie-tracker h2 { /*food log*/
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    color: #0d6510;
     text-align: center;
   }
   
@@ -69,10 +74,13 @@
   footer {
     text-align: center;
     padding: 20px;
+    width: 100%;
+    height: 0.5rem;
     background-color: #333;
     color: white;
   }
   
+
   /* Responsive Design */
   @media screen and (max-width: 768px) {
     .header h1 {
