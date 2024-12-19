@@ -65,30 +65,61 @@ section{
   display: none;
 }
 
-.home-section{
-   height: 100vh ;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: url(https://images.pexels.com/photos/17210050/pexels-photo-17210050/free-photo-of-man-exercising-at-the-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-   text-align: center;
-
+.home-section {
+  min-height: 100vh; /* Use min-height instead of height for better responsiveness */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://images.pexels.com/photos/17210050/pexels-photo-17210050/free-photo-of-man-exercising-at-the-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll; /* Fix for mobile devices */
+  text-align: center;
+  padding: 20px; /* Ensure padding for small screens */
 }
 
-.home-section .content{
-   max-width: 60rem;
-   text-align: center;
+.home-section .content {
+  max-width: 60rem;
+  text-align: center;
 }
 
-.home-section .content h3{
+.home-section .content h3 {
   font-size: 4.5rem;
   text-transform: uppercase;
   color: #2acb38;
+  margin: 0;
 }
 
-  
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .home-section {
+     background-size: cover; /* Ensure the image adjusts to the screen */
+     padding: 20px;
+  }
+  .home-section .content h3 {
+     font-size: 3.5rem; /* Adjust text size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+     background-size: cover; /* Prevent cropping on smaller screens */
+     padding: 20px;
+  }
+  .home-section .content h3 {
+     font-size: 3rem; /* Adjust text size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section {
+     background-size: cover; /* Maintain the full background image */
+     padding: 15px; /* Additional padding for very small screens */
+  }
+  .home-section .content h3 {
+     font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+}
+
   .container {
     max-width: 1400px;
     margin: 0 auto;
