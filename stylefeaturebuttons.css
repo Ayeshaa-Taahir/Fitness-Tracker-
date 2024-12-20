@@ -3,12 +3,12 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa; /* background */
+  background-color: #0b0b0b; /* background */
   text-align: center;
 }
 
 header {
-  background-color: #26b920; /*  background */
+  background-color: #11b20c; /*  background */
   color: white;
   padding: 20px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -35,7 +35,7 @@ main {
   padding: 10px;
   border: none;
   border-radius: 10px;
-  color: white;
+  color: rgb(249, 249, 249);
   font-size: 2rem;
   font-weight: bold;
   background-size: cover;
@@ -68,7 +68,25 @@ main {
   background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/458/538/small/healthy-dieting-banner-template-with-with-food-icons-and-calculator-for-calories-counting-nutrition-plan-for-weight-control-slimming-and-health-flat-illustration-free-vector.jpg'); /* Replace with the actual path */
 }
 #camera-btn {
-  background-image: url('https://media.istockphoto.com/id/1407034598/photo/woman-photographing-fresh-green-salad-bowl.jpg?s=612x612&w=0&k=20&c=dCRxxERXgmStNQjaZvfFWz4SJkMdME3pC5tkyzg2p9w='); /* Replace with the actual path */
+  background-image: url('https://media.istockphoto.com/id/521708991/photo/wearing-her-clothes-with-attitude.jpg?s=612x612&w=0&k=20&c=SUnmsxpdyz5lw-XgYiskSozKzwC10lER6WN4m1FGlAE='); /* Replace with the actual path */
+}
+.back-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 /* Responsive Design */
 @media (max-width: 768px) {

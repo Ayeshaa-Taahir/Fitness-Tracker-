@@ -7,17 +7,29 @@
   <link rel="stylesheet" href="stylefeaturebuttons.css">
 </head>
 <body>
+  
   <header>
     <h1>Features</h1>
+    
   </header>
 
   <main class="features-buttons">
     <!-- Link buttons to the respective pages -->
-    <button id="diet-plan-btn">Diet Plan</button>
-    <button id="exercises-btn">Exercises</button>
-    <button id="calories-btn">Count Calories</button>
-    <button id="dashboard-btn">Progress Tracker</button>
-    <button id="camera-btn" onclick="navigateTo('camera.html')">Camera</button>
+    
+    <button id="diet-plan-btn" onclick="navigateTo('diet.html')">Diet Plan</button>
+    <button id="exercises-btn" onclick="navigateTo('exercise.html')">Exercises</button>
+    <button id="calories-btn" onclick="navigateTo('calories.html')">Count Calories</button>
+    <button id="dashboard-btn" onclick="navigateTo('dashboard.html')">Dashboard</button>
+    <button id="camera-btn" onclick="navigateTo('camera.html')">Capture your progress</button>
+    
   </main>
+  <section class="footer-section" id="footer-section">
+    <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <button class="back-button" onclick="goToHome()">Back to Home</button>
+      </form>
+    </div>
+
 
   <script src="features.js"></script>
