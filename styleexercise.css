@@ -30,13 +30,13 @@ body {
   .category-buttons {
     display: flex;
     justify-content: space-around;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   }
   
   .category-card {
     position: relative;
     width: 75%;
-    margin: 1rem;
+    margin: 2rem;
     height: 200px;
     border-radius: 10px;
     overflow: hidden;
@@ -110,7 +110,7 @@ body {
     width: 2000%;
     height: 200px;
     object-fit: cover;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
   }
   
   .plan h4 {
@@ -261,50 +261,4 @@ body {
 .stop-timer-btn:hover {
   background-color: #c82333;
 }
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Smaller font size for mobile */
-  }
-
-  .category-buttons {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center;
-  }
-
-  .category-card {
-    width: 90%; /* Take up most of the screen width */
-    margin: 0.5rem 0;
-  }
-
-  .plans-container {
-    flex-direction: column; /* Stack plan cards vertically */
-    gap: 1rem;
-  }
-
-  .plan,
-  .workout-plan {
-    width: 90%; /* Reduce width for smaller screens */
-  }
-
-  header h1 {
-    font-size: 1.5rem; /* Smaller font size for the header */
-  }
-
-  .plan img {
-    width: 100%; /* Adjust images to fit the container */
-    height: auto;
-  }
-
-  .timer-display {
-    font-size: 1rem; /* Smaller font for timer display */
-  }
-
-  .start-timer-btn {
-    padding: 8px 12px; /* Adjust button padding */
-    font-size: 0.9rem;
-  }
-}
-
 

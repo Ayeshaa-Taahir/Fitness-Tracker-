@@ -1,0 +1,107 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+  }
+  
+  header {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 28px;
+  }
+  
+  .camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4/3;
+    border: 3px solid #28a745;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .camera-controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .camera-controls button {
+    margin: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .camera-controls button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .camera-controls input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    font-size: 14px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+  }
+  
+  #photoPreview {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  #photoPreview img {
+    max-width: 100%;
+    border: 3px solid #28a745;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 20px;
+    }
+  
+    .camera-controls button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
+  

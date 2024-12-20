@@ -67,7 +67,9 @@ main {
 #calories-btn {
   background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/458/538/small/healthy-dieting-banner-template-with-with-food-icons-and-calculator-for-calories-counting-nutrition-plan-for-weight-control-slimming-and-health-flat-illustration-free-vector.jpg'); /* Replace with the actual path */
 }
-
+#camera-btn {
+  background-image: url('https://media.istockphoto.com/id/1407034598/photo/woman-photographing-fresh-green-salad-bowl.jpg?s=612x612&w=0&k=20&c=dCRxxERXgmStNQjaZvfFWz4SJkMdME3pC5tkyzg2p9w='); /* Replace with the actual path */
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .features-buttons button {

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera</title>
+  <link rel="stylesheet" href="stylecamera.css">
+</head>
+<body>
+  <header>
+    <h1>Camera</h1>
+  </header>
+
+  <main class="camera-container">
+    <div class="video-container">
+      <video id="camera" autoplay></video>
+    </div>
+    <canvas id="photoCanvas" class="hidden"></canvas>
+
+    <div class="camera-controls">
+      <button id="takePhotoBtn">Take Photo</button>
+      <input type="text" id="captionInput" placeholder="Add a caption (e.g., Day 1 Progress)">
+      <button id="savePhotoBtn" class="hidden">Save Photo</button>
+    </div>
+
+    <div id="photoPreview" class="hidden">
+      <h3>Preview</h3>
+      <img id="photoOutput" alt="Captured Image">
+    </div>
+  </main>
+
+  <script src="camera.js"></script>
+</body>
+</html>
