@@ -212,6 +212,8 @@ button:hover, .btn:hover {
   background-color: black; 
   color: var(--main-color);  
   width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .track-fitness-goals-easily h3 { 
@@ -230,9 +232,10 @@ button:hover, .btn:hover {
 }
 
 .fitness-image {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
-  margin-top: 20px;
+  margin: 20px auto 0;
+  display: block;
 }
 
   
