@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
-:root {
-  --main-color: #29d978;
+:root { /*Achieve your... & your fitness journey... text */
+  --main-color: #37cb24;
   --primary: #f0fff7;
   --black: #141414;
   --white: #fff;
@@ -62,11 +62,11 @@ section{
 .header-section .logo{
   font-size: 3.5rem;
   font-weight: bolder;
-  color: #1dc01d;
+  color: #17ef17;
 }
 
 .header-section .navbar a{
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   margin-left: 2rem;
   color: white;
   padding: 5px;
@@ -187,9 +187,10 @@ button:hover, .btn:hover {
 }
 
   /* Testimonials Section */
-  .testimonials {
+  .testimonials { /*user feedback heading */
     background-color: black;
-    color: white;
+    color: rgb(64, 246, 47);
+    font-size: 1.7rem;
     padding: 40px 20px;
     width: 100%;
   }
@@ -213,12 +214,12 @@ button:hover, .btn:hover {
   
   .rating {
     color: #ffcc00; /* Gold for stars */
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
   
-  .testimonial-text p {
-    font-size: 1rem;
-    color: white;
+  .testimonial-text p { /*userfeedbacks*/
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
   }
   
   
@@ -262,14 +263,14 @@ button:hover, .btn:hover {
   }
   
   .text-section h1 {
-    color: #469d50;
+    color: #30f309;
     font-size: 3rem;
   }
   
   .text-section p {
     margin: 10px 0; /*adds consistent spacing between lines*/
-    color: #cbbbbb;
-    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 1.7rem;
     line-height: 2;
   }
   
@@ -345,7 +346,7 @@ button:hover, .btn:hover {
 
   footer {
   
-    background-color: #1dc01d;
+    background-color: #61d261;
     color: rgb(12, 7, 7);
     padding: 40px 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -429,10 +430,11 @@ button:hover, .btn:hover {
     text-decoration: none;
     color: white;
     margin: 0 10px;
+    font-size: 1.5rem;
   }
   
   .social-icons a:hover {
-    color: #ccc;
+    color: #ffffff;
   }
   
   @media (max-width: 768px) {
