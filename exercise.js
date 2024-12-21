@@ -1,6 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
   const plansContainer = document.getElementById("plans-container");
   const categoryCards = document.querySelectorAll(".category-card");
+  const backButton = document.getElementById("back-button"); // Access the back button
+
+
+  // Attach event listener to the back button
+  if (backButton) {
+    backButton.addEventListener("click", goToHome);
+  }
+
+  // Function to navigate to the home page
+  function goToHome() {
+    window.location.href = 'exercise.html'; // Replace 'index.html' with your home page filename
+    }
+
+    // Existing navigation function
+    function navigateTo(page) {
+    window.location.href = page; // Redirects to the respective page
+    }
+
 
   // Render workout plans dynamically based on the selected category
   categoryCards.forEach((card) => {
@@ -78,6 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
       clearInterval(activeTimer);
       button.textContent = "Start Timer";
       button.classList.remove("stop-timer-btn");
+
+
     });
   }
 });

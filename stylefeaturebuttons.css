@@ -3,18 +3,19 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0b0b0b; /* background */
+  background-color: #ffffff; /* background */
   text-align: center;
 }
 
 header {
-  background-color: #11b20c; /*  background */
+  background-color: #12b20f; /*  background */
   color: white;
   padding: 20px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
+  color: #ffffff;
   font-size: 2.5rem;
   margin: 0;
 }
@@ -70,8 +71,9 @@ main {
 #camera-btn {
   background-image: url('https://media.istockphoto.com/id/521708991/photo/wearing-her-clothes-with-attitude.jpg?s=612x612&w=0&k=20&c=SUnmsxpdyz5lw-XgYiskSozKzwC10lER6WN4m1FGlAE='); /* Replace with the actual path */
 }
+
 .back-button {
-  background-color: #4CAF50; /* Green background */
+  background-color: #1d731f; /* Green background */
   color: white; /* White text */
   border: none;
   padding: 10px 20px;
@@ -88,6 +90,8 @@ main {
   background-color: #45a049; /* Darker green on hover */
   transform: scale(1.05); /* Slight zoom on hover */
 }
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .features-buttons button {
