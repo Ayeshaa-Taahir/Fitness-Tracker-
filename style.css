@@ -343,123 +343,119 @@ button:hover, .btn:hover {
     color: #990000;
   }
 
-  /* General Footer Styling */
-.footer-section {
-  background-color: black;  /* Dark background for the footer */
-  color: white;  /* White text */
-  padding: 2rem 9%;  /* Top and bottom padding */
-  text-align: center;
-}
-
-/* Container for the content */
-.footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;  /* Padding on left and right */
-}
-
-/* Footer Top */
-.footer-top {
-  margin-bottom: 2rem;
-}
-
-.footer-top h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.footer-top p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2rem;
-}
-
-/* Form Styling */
-.join-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.join-form input[type="text"], 
-.join-form input[type="email"] {
-  width: 100%;
-  max-width: 400px;
-  padding: 1rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  outline: none;
-}
-
-.join-form input[type="text"]:focus, 
-.join-form input[type="email"]:focus {
-  border-color: #ff6347;  /* Focus border color */
-}
-
-.join-now-button {
-  padding: 1rem 2rem;
-  background-color: #ff6347;  /* Primary color */
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.join-now-button:hover {
-  background-color: #e5533d;  /* Hover effect */
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  margin-top: 3rem;
-  padding: 2rem 0;
-  color: rgba(235, 13, 13, 0.6);
+  footer {
   
-}
+    background-color: #1dc01d;
+    color: rgb(12, 7, 7);
+    padding: 40px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  .left-side {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .left-side h2 {
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .left-side .quote {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .left-side .join-now {
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .left-side .join-now :hover{
+    color: black;
+  }
 
-.footer-bottom p {
-  font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.8);  /* Slightly darker background for the bottom */
-  margin-bottom: 1rem;
-}
-
-.footer-bottom a {
-  color: var(--main-color);
-}
-
-.footer-bottom a:hover {
-  color: white;
-}
-
-/* Social Links */
-.social-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.social-links li {
-  margin: 0 1rem;
-}
-
-.social-links li a {
-  color: white;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-links li a:hover {
-  color: var(--main-color);  /* Change color on hover */
-}
+  .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    text-align: left;
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .bottom-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .bottom-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+  }
+  
+  .social-icons a:hover {
+    color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-side {
+      text-align: center;
+      padding-right: 0;
+    }
+  
+    .right-side {
+      display: block;
+      text-align: center;
+    }
+  
+    .column {
+      padding: 10px 0;
+    }
+  }
+  
 
 /* Responsive Design for Smaller Screens */
 
