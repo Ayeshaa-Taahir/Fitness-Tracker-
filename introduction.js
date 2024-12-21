@@ -1,3 +1,10 @@
+
+//  Change the color of the heading on click
+document.querySelectorAll(".step-number").forEach((element) => {
+  element.addEventListener("click", () => {
+    element.style.color = element.style.color === "red" ? "#007bff" : "red";
+  });
+});
 // JavaScript for Join Now button functionality
 document.querySelector('.join-now-button').addEventListener('click', function() {
   const email = document.querySelector('input[name="email"]').value.trim();

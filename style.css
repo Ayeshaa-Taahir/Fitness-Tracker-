@@ -10,7 +10,7 @@
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -55,7 +55,7 @@ section{
   z-index: 1000;
   display: flex ;
   align-items: center ;
-  justify-content: space-between ;
+  justify-content: space-between;
   padding: 1.8rem 4% ;
 }
 
@@ -155,18 +155,28 @@ button:hover, .btn:hover {
   }
 }
 
-  .container {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  
+.main-heading {
+  text-align: center;
+  background-color: #000000;
+  padding: 4px 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #09130c;
+}
 
-/* Ensure the content is above the overlay */
+.heading-text {
+  color: #1dc01d;
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+
 .container {
-  position: relative;
-  z-index: 2;
-  width: 100%;
+  display: flex;
+  flex-wrap: nowrap; /* Keeps image and text side-by-side */
+  justify-content: space-between; /* Ensures consistent spacing between image and text */
+  align-items: center; /* Centers text and image vertically */
   padding: 20px;
+  border-bottom: 1px solid #07280b;
+  gap: 30px; /* Adds spacing between image and text */
 }
 
   /* Testimonials Section */
@@ -205,119 +215,81 @@ button:hover, .btn:hover {
   }
   
   
- /* Fitness Goals Section */
-.track-fitness-goals-easily { 
-  text-align: center;
-  padding: 40px 20px;
-  background-color: black; 
-  color: var(--main-color);  
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
+  /*.text-section  {
+    flex: 1;
+    margin: 0; /* Removes extra margins /
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds consistent spacing between step number and text *
+  }*/
 
-.track-fitness-goals-easily h3 { 
-  font-size: 3rem;  /* Fixed font-size issue */
-  color: #0cbc6a;  /* White text for the heading */
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-.track-fitness-goals-easily p { 
-  font-size: 2rem;
-  color: white; /* Slightly lighter black for better contrast */
-  line-height: 1.5;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.fitness-image {
-  max-width: 90%;
-  height: auto;
-  margin: 20px auto 0;
-  display: block;
-}
-
+  .container:nth-child(odd) .image-section {
+    order: 1; /* Ensures images on the left for odd sections */
+  }
   
-  /* Stay Motivated and Accountable Section (Black Background) */
-  .motivated-accountable-section { /*Background*/
-    text-align: center;
-    padding: 40px 20px;
-    background-color: black;  /* background */
-    color: var(--main-color);
+  .container:nth-child(odd) .text-section {
+    order: 2; /* Ensures text on the right for odd sections */
+  }
+  
+  .container:nth-child(even) .image-section {
+    order: 2; /* Ensures images on the right for even sections */
+  }
+  
+  .container:nth-child(even) .text-section {
+    order: 1; /* Ensures text on the left for even sections */
+  }
+
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers the image in its container */
+    align-items: center;
+}
+  
+  .text-section {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+  }
+  
+  .text-section h1 {
+    color: #469d50;
+    font-size: 2.4rem;
+  }
+  
+  .text-section p {
+    margin: 10px 0; /*adds consistent spacing between lines*/
+    color: #cbbbbb;
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  
+  .image-section img {
     width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .motivated-accountable-section h3 { /* Heading Text*/
-    font-size: 3rem;
-    color: rgb(44, 40, 41); 
-    margin-bottom: 10px;
-    margin-top: 0;
+  .step-number {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #1dc01d;
   }
-  
-  .motivated-accountable-section p { /* subheading text */
+
+  .step-text {
+    color: #007bff;
     font-size: 2rem;
-    color: white;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .fitness-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
   }
   
-  /* Personalized Tracking Section (White Background) */
-  /* Personalized Tracking Section */
-.personalized-tracking-section {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: black; /* Dark background */
-  color: var(--main-color);  /* Dark color for text */
-  width: 100%;
-}
-
-.personalized-tracking-section h3 {
-  font-size: 3rem;  /* Heading font-size */
-  color: #0cbc6a;  /* Green color for the heading */
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-.personalized-tracking-section p {
-  font-size: 2rem;
-  color: white; /* Lighter green for better contrast */
-  line-height: 1.5;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.fitness-image {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px; /* Margin to push the image down */
-}
-
-.call-to-action{
-    text-align: center;
-    padding: 40px 20px;
-    background-color: black; /* Dark background */
-    color: var(--main-color);  /* Dark color for text */
-    width: 100%;
-}
-
-  /* Mobile responsiveness */
   @media (max-width: 768px) {
-    .track-fitness-goals-easily h3, .motivated-accountable-section h3, .personalized-tracking-section h3, .call-to-action h3 {
-      font-size: 1.8rem;
+    .container {
+      flex-direction: column;
+      align-items: center;
     }
-    
-    .track-fitness-goals-easily p, .motivated-accountable-section p, .personalized-tracking-section p, .call-to-action p {
-      font-size: 0.9rem; /* Smaller font for mobile 
-    }
-  } 
+  }
 
   /* Feedback Section */
 .feedback-section {
