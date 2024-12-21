@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to navigate to the home page
   function goToHome() {
-    window.location.href = 'exercise.html'; // Replace 'index.html' with your home page filename
+    window.location.href = 'features.html'; // Replace 'index.html' with your home page filename
     }
 
     // Existing navigation function
