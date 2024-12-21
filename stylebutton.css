@@ -60,6 +60,25 @@
   color: #333;
 }
 
+.back-button {
+  background-color: #1d731f; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   #diet-plan h3 {

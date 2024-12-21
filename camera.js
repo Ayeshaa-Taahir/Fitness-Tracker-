@@ -49,3 +49,13 @@ savePhotoBtn.addEventListener('click', () => {
   link.download = 'captured_photo.png';
   link.click();
 });
+
+// Function to navigate to the home page
+function goToHome() {
+  window.location.href = 'index.html'; // Replace 'index.html' with your home page filename
+}
+
+// Existing navigation function
+function navigateTo(page) {
+  window.location.href = page; // Redirects to the respective page
+}
