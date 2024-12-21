@@ -62,17 +62,18 @@ section{
 .header-section .logo{
   font-size: 3.5rem;
   font-weight: bolder;
-  color: var(--main-color);
+  color: #1dc01d;
 }
 
 .header-section .navbar a{
   font-size: 1.7rem;
   margin-left: 2rem;
   color: white;
+  padding: 5px;
 }
 
 .header-section .navbar a:hover {
-  color: var(--main-color);
+  color: #1dc01d;
 }
 
 /* Buttons */
@@ -113,15 +114,21 @@ button:hover, .btn:hover {
 }
 
 .home-section .content {
+  position: relative; /* Makes this container a positioned element */
+  width: 700px; /* Example width */
+  height: 500px; /* Example height */
   max-width: 60rem;
   text-align: match-parent;
 }
 
 .home-section .content h3 {
-  font-size: 4.5rem;
+  position: absolute; /* Enables positioning within the container */
+  bottom: 0; /* Positions the text at the bottom */
+  font-size: 4rem;
   text-transform: uppercase;
   color: var(--main-color);
   margin: 0;
+  padding: 10px 10px;
 }
 
 /* Media Queries for Responsiveness */
@@ -157,14 +164,14 @@ button:hover, .btn:hover {
 
 .main-heading {
   text-align: center;
-  background-color: #000000;
-  padding: 4px 10px;
+  background-color: #00000038;
+  padding: 45px 10px;
   margin-bottom: 20px;
   border-bottom: 2px solid #09130c;
 }
 
 .heading-text {
-  color: #1dc01d;
+  color: var(--main-color);
   font-size: 3.3rem;
   font-weight: bold;
 }
@@ -174,7 +181,7 @@ button:hover, .btn:hover {
   flex-wrap: nowrap; /* Keeps image and text side-by-side */
   justify-content: space-between; /* Ensures consistent spacing between image and text */
   align-items: center; /* Centers text and image vertically */
-  padding: 20px;
+  padding: 40px;
   border-bottom: 1px solid #07280b;
   gap: 30px; /* Adds spacing between image and text */
 }
@@ -256,7 +263,7 @@ button:hover, .btn:hover {
   
   .text-section h1 {
     color: #469d50;
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
   
   .text-section p {
