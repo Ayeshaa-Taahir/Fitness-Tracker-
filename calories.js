@@ -14,7 +14,7 @@ let totalCalories = 0;
 trackButton.addEventListener('click', function() {
     // Get the food and calories input values
     const food = foodInput.value.trim();
-    const calories = parseInt(caloriesInput.value.trim());
+    const calories = parseInt(caloriesInput.value.trim()); 
 
     // Validate the input values
     if (!food) {
