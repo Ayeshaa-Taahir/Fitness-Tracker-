@@ -347,7 +347,7 @@ button:hover, .btn:hover {
   footer {
     background-color: #52d252;
     color: rgb(7, 43, 16);
-    padding: 10px 0;
+    padding: 40px 10px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -355,7 +355,7 @@ button:hover, .btn:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1400px;
+    max-width: 3000px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -378,6 +378,21 @@ button:hover, .btn:hover {
 
 
   /* Input Boxes Styling */
+
+  .notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+  }
+
   .input-boxes {
     display: flex;
     flex-direction: column;
@@ -387,9 +402,11 @@ button:hover, .btn:hover {
   
   .input-field {
     padding: 10px;
+    display: block;
+    margin: 5px 0;
     font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
     outline: none;
     width: 80%; /* Adjust width here (e.g., 80%, 300px, etc.) */
     max-width: 300px; /* Optional: Limit maximum width for large screens */
@@ -399,6 +416,7 @@ button:hover, .btn:hover {
     border-color: white;
     background-color: #f0f0f0;
     transition: 0.3s; /* Optional smooth focus effect */
+    outline: none;
   }
   
   .left-side .join-now {
@@ -406,17 +424,20 @@ button:hover, .btn:hover {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    padding: 5px 20px;
-    font-size: 1rem;
+    padding: 15px 20px;
+    font-size: 1.1rem;
     background-color: white;
     color: green;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 6px;
+    width: 80%; /* Adjust width here (e.g., 80%, 300px, etc.) */
+    max-width: 90px; /* Optional: Limit maximum width for large screens */
   }
   
   .left-side .join-now:hover{
-    background-color: #f0f0f0;
+    background-color: #03210e;
+    color: white;
   }
 
   .right-side {
@@ -476,6 +497,7 @@ button:hover, .btn:hover {
   
   .social-icons a:hover {
     color: #ffffff;
+    background-color: #03210e;
   }
   
   @media (max-width: 768px) {

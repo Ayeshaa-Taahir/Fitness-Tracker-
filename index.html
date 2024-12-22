@@ -134,12 +134,15 @@
         <h2>Fitness Tracker</h2>
         <p class="quote">"Track your fitness journey with us!"</p>
 
-      <!-- Input fields -->
-      <div class="input-boxes">
-        <input type="text" placeholder="Enter your name" class="input-field" />
-        <input type="email" placeholder="Enter your email" class="input-field" />
-      </div>
-        <button class="join-now">Join Now</button>
+      <!-- Input Form -->
+        <div class="input-boxes">
+          <input type="text" id="name" class="input-field" placeholder="Enter your name">
+         <input type="email" id="email" class="input-field" placeholder="Enter your email">
+       </div>
+       <button class="join-now" onclick="handleSubmission()">Join Now</button>
+
+      <!-- Notification Message -->
+       <div id="notification" class="notification"></div>
       </div>
       
       <!-- Right Side -->
