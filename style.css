@@ -366,8 +366,10 @@ button:hover, .btn:hover {
   }
   
   .left-side h2 {
-    font-size: 2.9rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    font-weight: bolder;
+    color: black;
   }
   
   .left-side .quote {
