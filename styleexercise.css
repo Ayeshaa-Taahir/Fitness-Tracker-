@@ -280,3 +280,44 @@ body {
   background-color: #45a049; /* Darker green on hover */
   transform: scale(1.05); /* Slight zoom on hover */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .category-card {
+      width: calc(100% - 2rem);
+  }
+
+  .plans-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .plan {
+      flex: 1 1 calc(100% - 2rem);
+      max-width: 100%;
+  }
+
+  .timer-display {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      font-size: 1rem;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .category-card h2 {
+      font-size: 1rem;
+      line-height: 180px;
+  }
+}
