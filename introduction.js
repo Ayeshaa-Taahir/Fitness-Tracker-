@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 //  Change the color of the heading on click
 document.querySelectorAll(".step-number").forEach((element) => {
   element.addEventListener("click", () => {
@@ -12,25 +11,6 @@ document.querySelector('.join-now').addEventListener('click', function() {
   const email = document.querySelector('input[name="email"]').value.trim();
   if (email) {
     alert(`Thank you for joining ${email}!`);
-=======
-function handleSubmission() {
-  const name = document.getElementById("name");
-  const email = document.getElementById("email");
-  const notification = document.getElementById("notification");
-
-  // Reset styles and notification
-  name.style.borderColor = "";
-  email.style.borderColor = "";
-  notification.style.display = "none";
-
-  // Validate inputs
-  if (!name.value || !email.value) {
-    alert("Please fill out both fields.");
-
-    // Highlight empty fields with red border
-    if (!name.value) name.style.borderColor = "red";
-    if (!email.value) email.style.borderColor = "red";
->>>>>>> 42c9338644687172d9f5bf48a752effb8cc27042
   } else {
     // Highlight fields with green border
     name.style.borderColor = "green";
