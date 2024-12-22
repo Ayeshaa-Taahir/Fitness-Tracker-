@@ -1,4 +1,5 @@
-  // Sample Data (replace with actual data in a real app)
+ 
+ // Sample Data (replace with actual data in a real app)
 const calorieData = [500, 600, 700, 800, 900, 1000];
 const workoutData = [1, 2, 1.5, 2, 2.5, 3];
 
@@ -55,7 +56,7 @@ new Chart(workoutsChartCtx, {
       legend: { display: true } // Display the legend
     }
   }
-});
+}); 
 
 // Function to navigate to the home page
 function goToHome() {

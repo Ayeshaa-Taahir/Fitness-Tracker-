@@ -5,8 +5,9 @@ document.querySelectorAll(".step-number").forEach((element) => {
     element.style.color = element.style.color === "red" ? "#007bff" : "red";
   });
 });
+
 // JavaScript for Join Now button functionality
-document.querySelector('.join-now-button').addEventListener('click', function() {
+document.querySelector('.join-now').addEventListener('click', function() {
   const email = document.querySelector('input[name="email"]').value.trim();
   if (email) {
     alert(`Thank you for joining ${email}!`);
