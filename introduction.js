@@ -16,6 +16,7 @@ function handleSubmission() {
     // Highlight empty fields with red border
     if (!name.value) name.style.borderColor = "red";
     if (!email.value) email.style.borderColor = "red";
+
   } else {
     // Highlight fields with green border
     name.style.borderColor = "green";
