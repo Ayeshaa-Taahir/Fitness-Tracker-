@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Tracker</title>
+    <title>Fit Track</title>
 
     <!-- Link to the Favicon -->
     <link rel="icon" href="icon2.jpeg" type="image/x-icon">
@@ -22,7 +22,7 @@
  <!-- Header Section -->
 <header class="header-section">
  
-    <a href="#" class="logo">Fitness Tracker</a> 
+    <a href="#" class="logo">Fit Track</a> 
     <nav class="navbar">
       
         <a href="#testimonials-section">Home</a>
@@ -61,7 +61,7 @@
     <div class="text-section">
       
       <h1>Stronger Every Day</h1>
-      <p> "Push yourself because no one else is going to do it for you"</p>
+      <p> "Push yourself because no one else is going to do it for you. Success begins where your comfort zone ends, and every step you take today shapes the stronger, better version of yourself tomorrow"</p>
     </div>
   </section>
   <section class="container">
@@ -131,15 +131,18 @@
     <div class="footer-container">
       <!-- Left Side -->
       <div class="left-side">
-        <h2>Fitness Tracker</h2>
+        <h2>Fit Track</h2>
         <p class="quote">"Track your fitness journey with us!"</p>
 
-      <!-- Input fields -->
-      <div class="input-boxes">
-        <input type="text" placeholder="Enter your name" class="input-field" />
-        <input type="email" placeholder="Enter your email" class="input-field" />
-      </div>
-        <button class="join-now">Join Now</button>
+      <!-- Input Form -->
+        <div class="input-boxes">
+          <input type="text" id="name" class="input-field" placeholder="Enter your name">
+         <input type="email" id="email" class="input-field" placeholder="Enter your email">
+       </div>
+       <button class="join-now" onclick="handleSubmission()">Join Now</button>
+
+      <!-- Notification Message -->
+       <div id="notification" class="notification"></div>
       </div>
       
       <!-- Right Side -->
@@ -173,7 +176,7 @@
     
     <!-- Bottom Section -->
     <div class="bottom-section">
-      <p>&copy; 2024 Fitness Tracker</p>
+      <p>&copy; 2024 Fit Track</p>
       <div class="social-icons">
         <a href="#" aria-label="Facebook" class="social-link"><i class="fab fa-facebook-f"></i></a>
       <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
