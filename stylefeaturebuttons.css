@@ -3,13 +3,13 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff; /* background */
+  background-color: #000000; /* background */
   text-align: center;
 }
 
 header {
   background-color: #12b20f; /*  background */
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
