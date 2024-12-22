@@ -347,7 +347,11 @@ button:hover, .btn:hover {
   footer {
     background-color: #52d252;
     color: rgb(7, 43, 16);
+<<<<<<< HEAD
     padding: 20px 10px;
+=======
+    padding: 7px 10px;
+>>>>>>> bd6b329ce5fdfcdf0524e91c7c3c5f06b464bdd0
     font-family: Arial, Helvetica, sans-serif;
   }
   
