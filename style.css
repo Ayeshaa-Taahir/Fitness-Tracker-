@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
-:root { /*Achieve your... & your fitness journey... text */
-  --main-color: #37cb24;
+:root {
+  --main-color: #29d978;
   --primary: #f0fff7;
   --black: #141414;
   --white: #fff;
@@ -62,18 +62,22 @@ section{
 .header-section .logo{
   font-size: 3.5rem;
   font-weight: bolder;
-  color: #17ef17;
+  color: var(--main-color);
 }
 
 .header-section .navbar a{
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-left: 2rem;
+<<<<<<< HEAD
   color: rgb(0, 0, 0);
   padding: 5px;
+=======
+  color: white;
+>>>>>>> 56c471a1b127b408762655a156570de313bf8e49
 }
 
 .header-section .navbar a:hover {
-  color: #1dc01d;
+  color: var(--main-color);
 }
 
 /* Buttons */
@@ -114,21 +118,15 @@ button:hover, .btn:hover {
 }
 
 .home-section .content {
-  position: relative; /* Makes this container a positioned element */
-  width: 700px; /* Example width */
-  height: 500px; /* Example height */
   max-width: 60rem;
   text-align: match-parent;
 }
 
 .home-section .content h3 {
-  position: absolute; /* Enables positioning within the container */
-  bottom: 0; /* Positions the text at the bottom */
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   color: var(--main-color);
   margin: 0;
-  padding: 10px 10px;
 }
 
 /* Media Queries for Responsiveness */
@@ -164,14 +162,19 @@ button:hover, .btn:hover {
 
 .main-heading {
   text-align: center;
+<<<<<<< HEAD
   background-color: #ffffff;
   padding: 45px 10px;
+=======
+  background-color: #000000;
+  padding: 4px 10px;
+>>>>>>> 56c471a1b127b408762655a156570de313bf8e49
   margin-bottom: 20px;
   border-bottom: 2px solid #f3f3f3;
 }
 
 .heading-text {
-  color: var(--main-color);
+  color: #1dc01d;
   font-size: 3.3rem;
   font-weight: bold;
 }
@@ -181,16 +184,22 @@ button:hover, .btn:hover {
   flex-wrap: nowrap; /* Keeps image and text side-by-side */
   justify-content: space-between; /* Ensures consistent spacing between image and text */
   align-items: center; /* Centers text and image vertically */
-  padding: 40px;
+  padding: 20px;
   border-bottom: 1px solid #07280b;
   gap: 30px; /* Adds spacing between image and text */
 }
 
   /* Testimonials Section */
+<<<<<<< HEAD
   .testimonials { /*user feedback heading */
     background-color: rgb(255, 255, 255);
     color: rgb(64, 246, 47);
     font-size: 1.7rem;
+=======
+  .testimonials {
+    background-color: black;
+    color: white;
+>>>>>>> 56c471a1b127b408762655a156570de313bf8e49
     padding: 40px 20px;
     width: 100%;
   }
@@ -214,12 +223,18 @@ button:hover, .btn:hover {
   
   .rating {
     color: #ffcc00; /* Gold for stars */
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
   
+<<<<<<< HEAD
   .testimonial-text p { /*userfeedbacks*/
     font-size: 1.7rem;
     color: rgb(2, 0, 0);
+=======
+  .testimonial-text p {
+    font-size: 1rem;
+    color: white;
+>>>>>>> 56c471a1b127b408762655a156570de313bf8e49
   }
   
   
@@ -263,14 +278,19 @@ button:hover, .btn:hover {
   }
   
   .text-section h1 {
-    color: #30f309;
-    font-size: 3rem;
+    color: #469d50;
+    font-size: 2.4rem;
   }
   
   .text-section p {
     margin: 10px 0; /*adds consistent spacing between lines*/
+<<<<<<< HEAD
     color: #000000;
     font-size: 1.7rem;
+=======
+    color: #cbbbbb;
+    font-size: 1.5rem;
+>>>>>>> 56c471a1b127b408762655a156570de313bf8e49
     line-height: 2;
   }
   
@@ -301,9 +321,15 @@ button:hover, .btn:hover {
 
   /* Feedback Section */
 .feedback-section {
+<<<<<<< HEAD
     padding: 20px 10px;
     background-color: rgb(255, 245, 245);
     color: rgb(12, 0, 0);
+=======
+    padding: 40px 20px;
+    background-color: black;
+    color: white;
+>>>>>>> 56c471a1b127b408762655a156570de313bf8e49
     text-align: center;
     width: 100%;
   }
@@ -344,193 +370,123 @@ button:hover, .btn:hover {
     color: #990000;
   }
 
-  footer {
-    background-color: #52d252;
-    color: rgb(7, 43, 16);
-    padding: 7px 10px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 3000px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-  
-  .left-side {
-    flex: 1;
-    padding-right: 20px;
-    justify-content: space-between; 
-    padding-top: 4%;
-  }
-  
-  .left-side h2 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    font-weight: bolder;
-    color: black;
-  }
-  
-  .left-side .quote {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    font-weight: bold 
-  }
-
-
-  /* Input Boxes Styling */
-
-  .notification {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    display: none; /* Hidden by default */
-    z-index: 1000;
-  }
-
-  .input-boxes {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .input-field {
-    padding: 10px;
-    display: block;
-    margin: 5px 0;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    outline: none;
-    width: 80%; /* Adjust width here (e.g., 80%, 300px, etc.) */
-    max-width: 300px; /* Optional: Limit maximum width for large screens */
-  }
-  
-  .input-field:focus {
-    border-color: white;
-    background-color: #f0f0f0;
-    transition: 0.3s; /* Optional smooth focus effect */
-    outline: none;
-  }
-  
-  .left-side .join-now {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-    padding: 15px 20px;
-    font-size: 1.1rem;
-    background-color: white;
-    color: green;
-    border: none;
-    cursor: pointer;
-    border-radius: 6px;
-    width: 80%; /* Adjust width here (e.g., 80%, 300px, etc.) */
-    max-width: 90px; /* Optional: Limit maximum width for large screens */
-  }
-  
-  .left-side .join-now:hover{
-    background-color: #03210e;
-    color: white;
-  }
-
-  .right-side {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;  /* Keep space between the elements */
-    padding-top: 8%;
-  }
-  
-  .column {
-    text-align: left;
-    flex: 1;
-    padding: 0px 20px;
-    display: flex;
-    flex-direction: column;  /* Stack h3 and ul vertically within the column */
-    justify-content: center;  /* Vertically center the content inside the column */
-    align-items: flex-start;  /* Aligns text to the left */
-  }
-  
-  .column h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  
-  .column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .column ul li {
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  
-  .bottom-section {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .bottom-section p {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-    font-weight: bolder;
-  }
-  
-  /* Social Icons Styling */
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
+  /* General Footer Styling */
+.footer-section {
+  background-color: black;  /* Dark background for the footer */
+  color: white;  /* White text */
+  padding: 2rem 9%;  /* Top and bottom padding */
+  text-align: center;
 }
 
-  .social-icons a {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-    font-size: 1.5rem;
-  }
+/* Container for the content */
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;  /* Padding on left and right */
+}
+
+/* Footer Top */
+.footer-top {
+  margin-bottom: 2rem;
+}
+
+.footer-top h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-top p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+/* Form Styling */
+.join-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.join-form input[type="text"], 
+.join-form input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.join-form input[type="text"]:focus, 
+.join-form input[type="email"]:focus {
+  border-color: #ff6347;  /* Focus border color */
+}
+
+.join-now-button {
+  padding: 1rem 2rem;
+  background-color: #ff6347;  /* Primary color */
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-now-button:hover {
+  background-color: #e5533d;  /* Hover effect */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  color: rgba(235, 13, 13, 0.6);
   
-  .social-icons a:hover {
-    color: #ffffff;
-    background-color: #03210e;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .left-side {
-      text-align: center;
-      padding-right: 0;
-    }
-  
-    .right-side {
-      display: block;
-      text-align: center;
-    }
-  
-    .column {
-      padding: 10px 0;
-    }
-  }
-  
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);  /* Slightly darker background for the bottom */
+  margin-bottom: 1rem;
+}
+
+.footer-bottom a {
+  color: var(--main-color);
+}
+
+.footer-bottom a:hover {
+  color: white;
+}
+
+/* Social Links */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 1rem;
+}
+
+.social-links li a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: var(--main-color);  /* Change color on hover */
+}
 
 /* Responsive Design for Smaller Screens */
 
@@ -609,3 +565,5 @@ button:hover, .btn:hover {
       font-size: 1.2rem;
   }
 }
+
+
