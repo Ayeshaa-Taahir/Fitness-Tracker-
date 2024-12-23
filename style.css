@@ -23,8 +23,8 @@
 
 /* Set black background for the entire page */
 body {
-  background-color: black; /* Black background for the entire page */
-  color: white; /* Default text color for readability */
+  background-color: rgb(255, 255, 255); /* Black background for the entire page */
+  color: rgb(0, 0, 0); /* Default text color for readability */
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -39,15 +39,15 @@ html{
 
 section{
    padding: 3rem 9%;
-   background-color: black;
-   color: white;
+   background-color: rgb(248, 248, 248);
+   color: rgb(0, 0, 0);
 }
 
 
 /* Header updates */
 .header-section {
-  background: black;
-  color: white;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   box-shadow: none;
   position: fixed;
   top: 0;left: 0;
@@ -68,7 +68,7 @@ section{
 .header-section .navbar a{
   font-size: 1.8rem;
   margin-left: 2rem;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 5px;
 }
 
@@ -79,7 +79,7 @@ section{
 /* Buttons */
 button, .btn {
   background: var(--main-color);
-  color: black;
+  color: rgb(250, 250, 250);
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -88,8 +88,8 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-  background: white;
-  color: black;
+  background: rgb(0, 0, 0);
+  color: rgb(219, 219, 219);
   transition: 0.3s;
 }
 
@@ -101,7 +101,7 @@ button:hover, .btn:hover {
 }
 
 .home-section {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   min-height: 100vh; /* Use min-height instead of height for better responsiveness */
   display: flex;
   align-items: center;
@@ -164,10 +164,10 @@ button:hover, .btn:hover {
 
 .main-heading {
   text-align: center;
-  background-color: #00000038;
+  background-color: #ffffff;
   padding: 45px 10px;
   margin-bottom: 20px;
-  border-bottom: 2px solid #09130c;
+  border-bottom: 2px solid #f3f3f3;
 }
 
 .heading-text {
@@ -188,7 +188,7 @@ button:hover, .btn:hover {
 
   /* Testimonials Section */
   .testimonials { /*user feedback heading */
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: rgb(64, 246, 47);
     font-size: 1.7rem;
     padding: 40px 20px;
@@ -219,7 +219,7 @@ button:hover, .btn:hover {
   
   .testimonial-text p { /*userfeedbacks*/
     font-size: 1.7rem;
-    color: rgb(255, 255, 255);
+    color: rgb(2, 0, 0);
   }
   
   
@@ -269,7 +269,7 @@ button:hover, .btn:hover {
   
   .text-section p {
     margin: 10px 0; /*adds consistent spacing between lines*/
-    color: #ffffff;
+    color: #000000;
     font-size: 1.7rem;
     line-height: 2;
   }
@@ -302,8 +302,8 @@ button:hover, .btn:hover {
   /* Feedback Section */
 .feedback-section {
     padding: 20px 10px;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 245, 245);
+    color: rgb(12, 0, 0);
     text-align: center;
     width: 100%;
   }
